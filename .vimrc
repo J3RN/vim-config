@@ -9,7 +9,7 @@ set nu
 " Use System clipboard
 set clipboard=unnamed
 
-" People told me to
+" People told me to (removes vi compatibility)
 set nocompatible
 
 " Highlight current line
@@ -23,7 +23,7 @@ set hlsearch
 " This seems interesting
 set ruler
 
-" Show when I go over 80 characters
+" Show where 80 characters is
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
