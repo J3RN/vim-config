@@ -14,15 +14,21 @@ pathogen_list = [
   'https://github.com/slim-template/vim-slim.git'             # Slim
 ]
 
-# Create the pathogen directories
-puts `mkdir ~/.vim`
-puts `mkdir ~/.vim/bundle && mkdir ~/.vim/autoload`
+desc "Move .vimrc to its rightful place and install plugins"
+task :default do
+  # Move vimrc to its proper place
+  puts `mv .vimrc ~/`
 
-# Install pathogen
-puts `curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim`
+  # Create the pathogen directories
+  puts `mkdir ~/.vim`
+  puts `mkdir ~/.vim/bundle && mkdir ~/.vim/autoload`
 
-# Install all pathogen items
-puts `cd ~/.vim/bundle`
-pathogen_list.each do |item|
-  puts `git clone #{item}`
+  # Install pathogen
+  puts `curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim`
+
+  # Install all pathogen items
+  puts `cd ~/.vim/bundle`
+  pathogen_list.each do |item|
+    puts `git clone #{item}`
+  end
 end
