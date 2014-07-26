@@ -27,8 +27,8 @@ task :default do
   puts `curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim`
 
   # Install all pathogen items
-  puts `cd ~/.vim/bundle`
   pathogen_list.each do |item|
-    puts `git clone #{item}`
+    new_folder = item.split('/').last[0..-5]
+    puts `git clone #{item} ~/.vim/bundle/#{new_folder}`
   end
 end
