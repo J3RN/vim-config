@@ -11,7 +11,8 @@ pathogen_list = [
   'https://github.com/tpope/vim-fugitive.git',                # Git support
   'https://github.com/tpope/vim-markdown.git',                # Markdown
   'https://github.com/tpope/vim-rails.git',                   # Rails!
-  'https://github.com/slim-template/vim-slim.git'             # Slim
+  'https://github.com/slim-template/vim-slim.git',            # Slim
+  'https://github.com/jiangmiao/auto-pairs.git'               # Auto pairing
 ]
 
 desc "Move .vimrc to its rightful place and install plugins"
