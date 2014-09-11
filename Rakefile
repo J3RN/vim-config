@@ -1,4 +1,8 @@
 task :default do
+  # Moving .vim
+  puts "Copying .vim directory"
+  puts `cp -r .vim ~/.vim`
+
   # Install Vundle
   puts "Installing Vundle..."
   puts `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
