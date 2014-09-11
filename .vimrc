@@ -40,6 +40,7 @@ Plugin 'tpope/vim-rails.git',                   " Rails!
 Plugin 'slim-template/vim-slim.git',            " Slim
 Plugin 'jiangmiao/auto-pairs.git'               " Auto pairing
 Plugin 'kien/rainbow_parentheses.vim.git'       " Rainbow parenthesis
+Plugin 'altercation/vim-colors-solarized.git'   " Solarized theme
 
 " End Vundle
 call vundle#end()
@@ -72,9 +73,6 @@ set fileformat=unix
 
 """ No line wrapping
 set nowrap
-
-""" Pathogen
-execute pathogen#infect()
 
 """ Syntax Highlighting
 syntax on
