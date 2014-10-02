@@ -21,7 +21,7 @@ task :default do
 
   # Install plugins
   puts "Installing plugins..."
-  `vim +PluginInstall +qall`
+  Kernel.system("vim +PluginInstall +qall")
 
   puts "All done! Enjoy!"
 end
