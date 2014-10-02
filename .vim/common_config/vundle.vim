@@ -12,7 +12,6 @@ Plugin 'scrooloose/syntastic.git',              " Syntastic
 Plugin 'edkolev/tmuxline.vim.git',              " Tmuxline
 Plugin 'bling/vim-airline.git',                 " Vim Airline
 Plugin 'kchmck/vim-coffee-script.git',          " Coffeescript
-Plugin 'altercation/vim-colors-solarized.git',  " Solarized!
 Plugin 'tpope/vim-bundler.git',                 " Bundler
 Plugin 'tpope/vim-git'                          " Vim-git
 Plugin 'tpope/vim-surround'                     " Vim-surround
