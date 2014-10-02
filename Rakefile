@@ -1,11 +1,11 @@
 task :default do
   # Moving .vim
   puts "Copying .vim directory"
-  puts `cp -r .vim ~/.vim`
+  `cp -r .vim ~/.vim`
 
   # Install Vundle
   puts "Installing Vundle..."
-  puts `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+  `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
   # Ask before clobbering
   if File.exists?("~/.vimrc")
@@ -17,11 +17,11 @@ task :default do
 
   # Link my Vimrc into your home directory
   puts "Inserting Vimrc..."
-  puts `cp .vimrc ~/`
+  `cp .vimrc ~/`
 
   # Install plugins
   puts "Installing plugins..."
-  puts `vim +PluginInstall +qall`
+  `vim +PluginInstall +qall`
 
   puts "All done! Enjoy!"
 end
