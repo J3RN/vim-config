@@ -50,7 +50,7 @@ set nowrap
 syntax on
 
 """ Solarized color scheme
-"""let g:solarized_termcolors=16
+"let g:solarized_termcolors=16
 set background=dark
 colo solarized
 
