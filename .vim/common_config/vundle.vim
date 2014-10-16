@@ -24,6 +24,7 @@ Plugin 'slim-template/vim-slim.git',            " Slim
 Plugin 'jiangmiao/auto-pairs.git'               " Auto pairing
 Plugin 'kien/ctrlp.vim.git',                    " CTRL-p
 Plugin 'kien/rainbow_parentheses.vim.git'       " Rainbow parenthesis
+Plugin 'elixir-lang/vim-elixir.git'             " Elixir support
 
 " End Vundle
 call vundle#end()

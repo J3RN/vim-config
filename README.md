@@ -29,3 +29,4 @@ does it for me
 - CTRL-P - Fast file searching
 - Rainbow Parenthesis - Make different sets of parenthesis different colors (
 for better understandability, obviously)
+- Elixir - For Elixir support, naturally
