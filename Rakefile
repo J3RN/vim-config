@@ -7,7 +7,7 @@ task :default do
 
   # Moving .vim
   puts "Copying .vim directory"
-  `cp -r .vim ~/.vim`
+  `cp -R ./.vim/* ~/.vim/`
 
   # Warn about moving vimrc
   if File.exists? File.expand_path("~/.vimrc")
