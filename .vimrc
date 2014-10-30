@@ -18,7 +18,7 @@ endif
 set nocompatible
 
 """ Enable Auto-save on startup
-let g:auto_save = 1
+"let g:auto_save = 1
 
 """ Highlight current line
 set cursorline
