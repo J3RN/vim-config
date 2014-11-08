@@ -95,7 +95,7 @@ au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " Auto complete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-:imap <lt>/<CR> </<C-X><C-O>
+:imap <lt>/<TAB> </<C-X><C-O>
 
 """ Set GUI font for MacVim
 set guifont=Sauce\ Code\ Powerline:h12
