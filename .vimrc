@@ -21,8 +21,8 @@ set nocompatible
 "let g:auto_save = 1
 
 """ Highlight current line
-set cursorline
-hi CursorLine cterm=NONE ctermbg=white guibg=white
+" set cursorline
+" hi CursorLine cterm=NONE ctermbg=white guibg=white
 
 """ Custom search stuff
 set ignorecase
@@ -50,9 +50,9 @@ set nowrap
 syntax on
 
 """ Solarized color scheme
-"let g:solarized_termcolors=16
-set background=dark
-colo solarized
+" let g:solarized_termcolors=16
+" set background=dark
+" colo solarized
 
 """ Enable the filetype plugin and indenting
 filetype plugin indent on
@@ -95,7 +95,7 @@ au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " Auto complete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-:imap <lt>/ </<C-X><C-O>
+:imap <lt>/<CR> </<C-X><C-O>
 
 """ Set GUI font for MacVim
 set guifont=Sauce\ Code\ Powerline:h12
