@@ -77,8 +77,8 @@ set shell=/bin/zsh
 
 """ Set spell checking
 setlocal spell spelllang=en_us
-""" Except for Ruby
-autocmd FileType ruby,coffee,haml,slim,scss set nospell
+""" Except for code. Because annoying
+autocmd FileType ruby,coffee,haml,slim,scss,vim,elixir set nospell
 
 """ RainbowParentheses
 au VimEnter * RainbowParenthesesToggle
