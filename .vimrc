@@ -76,9 +76,9 @@ set shell=/bin/zsh
 :imap jk <Esc>
 
 """ Set spell checking
-setlocal spell spelllang=en_us
+"setlocal spell spelllang=en_us
 """ Except for code. Because annoying
-autocmd FileType ruby,coffee,haml,slim,scss,vim,elixir set nospell
+"autocmd FileType ruby,coffee,haml,slim,scss,vim,elixir set nospell
 
 """ RainbowParentheses
 au VimEnter * RainbowParenthesesToggle
