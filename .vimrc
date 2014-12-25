@@ -109,7 +109,7 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 """ Custom Vim Rails additions
 let g:rails_projections = {
       \ "spec/factories/*.rb":  {"command": "factory"},
-      \ "config/*":             { "command": "cnfig" },
+      \ "config/*":             {"command": "conf" },
       \ "Gemfile":              {"command": "gemfile"},
       \ "Guardfile":            {"command": "guardfile"}}
 
