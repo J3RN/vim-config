@@ -26,6 +26,7 @@ Plugin 'kien/ctrlp.vim',                       " CTRL-p
 Plugin 'kien/rainbow_parentheses.vim'          " Rainbow parenthesis
 Plugin 'elixir-lang/vim-elixir'                " Elixir support
 " Plugin 'Valloric/YouCompleteMe'                " Autocompletion
+Plugin 'digitaltoad/vim-jade.git'              " Jade syntax highlighting
 
 " End Vundle
 call vundle#end()

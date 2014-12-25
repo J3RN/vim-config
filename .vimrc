@@ -6,6 +6,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+""" JSLint wants 4 spaces
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+
 """ Line numbers are pretty great
 set nu
 
