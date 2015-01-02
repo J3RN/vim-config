@@ -77,6 +77,7 @@ set shell=/bin/zsh
 
 """ I was told all the cool kids did it
 :imap jk <Esc>
+:nmap <C-c> :noh<CR>
 
 """ Set spell checking
 "setlocal spell spelllang=en_us
