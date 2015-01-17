@@ -73,7 +73,7 @@ set t_Co=256
 map <C-n> :NERDTreeToggle<CR>
 
 """ Needed as I use fish
-set shell=/bin/zsh
+set shell=/bin/zsh\ --login
 
 """ I was told all the cool kids did it
 :imap jk <Esc>
