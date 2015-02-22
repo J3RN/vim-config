@@ -6,8 +6,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-""" JSLint wants 4 spaces
+""" JSLint and PEP8 want 4 spaces
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 """ Line numbers are pretty great
 set nu
@@ -76,8 +77,15 @@ map <C-n> :NERDTreeToggle<CR>
 set shell=/bin/zsh\ --login
 
 """ I was told all the cool kids did it
-:imap jk <Esc>
-:nmap <C-c> :noh<CR>
+imap jk <Esc>
+
+""" Easier system for clearing searches
+nmap <C-c> :noh<CR>
+
+""" Custom folding stuff
+set fdm=indent         " Fold on indent, naturally
+nnoremap tt za<CR>
+au BufRead * normal zR
 
 """ Set spell checking
 "setlocal spell spelllang=en_us
@@ -99,7 +107,7 @@ au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " Auto complete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-:imap <lt>/<TAB> </<C-X><C-O>
+imap <lt>/<TAB> </<C-X><C-O>
 
 """ Set GUI font for MacVim
 set guifont=Sauce\ Code\ Powerline:h12
