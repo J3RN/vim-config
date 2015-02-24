@@ -84,6 +84,7 @@ nmap <C-c> :noh<CR>
 
 """ Custom folding stuff
 set fdm=indent         " Fold on indent, naturally
+au FileType gitcommit set fdm=manual
 nnoremap tt za<CR>
 au BufRead * normal zR
 
