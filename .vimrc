@@ -24,10 +24,6 @@ set nocompatible
 """ Enable Auto-save on startup
 "let g:auto_save = 1
 
-""" Highlight current line
-" set cursorline
-" hi CursorLine cterm=NONE ctermbg=white guibg=white
-
 """ Custom search stuff
 set ignorecase
 set incsearch
@@ -53,11 +49,6 @@ set nowrap
 """ Syntax Highlighting
 syntax on
 
-""" Solarized color scheme
-" let g:solarized_termcolors=16
-" set background=dark
-" colo solarized
-
 """ Enable the filetype plugin and indenting
 filetype plugin indent on
 
@@ -82,16 +73,16 @@ imap jk <Esc>
 """ Easier system for clearing searches
 nmap <C-c> :noh<CR>
 
-""" Custom folding stuff
-set fdm=indent         " Fold on indent, naturally
-au FileType gitcommit set fdm=manual
+""" Folding stuff
+set fdm=indent                        " Fold on indent, naturally
+au FileType gitcommit set fdm=manual  " Why would you fold gitcommits?
+" Toggle folding with 'tt'
 nnoremap tt za<CR>
+" All folds open by default
 au BufRead * normal zR
 
-""" Set spell checking
-"setlocal spell spelllang=en_us
-""" Except for code. Because annoying
-"autocmd FileType ruby,coffee,haml,slim,scss,vim,elixir set nospell
+""" Set spell checking for texty files
+autocmd FileType markdown setlocal spell spelllang=en_us
 
 """ RainbowParentheses
 au VimEnter * RainbowParenthesesToggle
