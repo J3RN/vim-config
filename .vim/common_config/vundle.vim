@@ -25,7 +25,7 @@ Plugin 'jiangmiao/auto-pairs'                   " Auto pairing
 Plugin 'kien/ctrlp.vim'                         " CTRL-p
 Plugin 'luochen1990/rainbow'                    " New rainbow parenthesis
 Plugin 'elixir-lang/vim-elixir'                 " Elixir support
-" Plugin 'Valloric/YouCompleteMe'               " Autocompletion
+Plugin 'Valloric/YouCompleteMe'                 " Autocompletion
 Plugin 'digitaltoad/vim-jade.git'               " Jade syntax highlighting
 
 " End Vundle

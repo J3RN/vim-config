@@ -23,5 +23,8 @@ task :default do
   puts "Installing plugins..."
   Kernel.system("vim +PluginInstall +qall")
 
+  puts "Please read the You Complete Me docs to finish the install"
+  Kernel.system("open https://github.com/Valloric/YouCompleteMe#faq")
+
   puts "All done! Enjoy!"
 end
