@@ -104,6 +104,7 @@ set guifont=Sauce\ Code\ Powerline:h12
 
 """ Rainbow parenthesis
 let g:rainbow_active = 1
+au FileType html RainbowToggle
 
 let g:rainbow_conf = {
       \   'guifgs': ['royalblue3', 'seagreen3', 'darkorchid3', 'firebrick3'],
