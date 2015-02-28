@@ -24,12 +24,15 @@ task :default do
   Kernel.system("vim +PluginInstall +qall")
 
   puts "\n\e[32mPlease read the You Complete Me docs to finish the install"
-  print "Do you want to read the YCM docs? (y/n) "
-  response = gets
-  if response[0] == "y"
-    Kernel.system("open https://github.com/Valloric/YouCompleteMe#faq")
+
+  if `uname`.include? "Darwin"
+    print "Do you want to read the YCM docs? (y/n) "
+    response = gets
+    if response[0] == "y"
+      Kernel.system("open https://github.com/Valloric/YouCompleteMe#faq")
+    end
+    print "\e[0m"
   end
-  print "\e[0m"
 
   puts "All done! Enjoy!"
 end
