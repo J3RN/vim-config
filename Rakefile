@@ -23,8 +23,13 @@ task :default do
   puts "Installing plugins..."
   Kernel.system("vim +PluginInstall +qall")
 
-  puts "Please read the You Complete Me docs to finish the install"
-  Kernel.system("open https://github.com/Valloric/YouCompleteMe#faq")
+  puts "\n\e[32mPlease read the You Complete Me docs to finish the install"
+  print "Do you want to read the YCM docs? (y/n) "
+  response = gets
+  if response[0] == "y"
+    Kernel.system("open https://github.com/Valloric/YouCompleteMe#faq")
+  end
+  print "\e[0m"
 
   puts "All done! Enjoy!"
 end
