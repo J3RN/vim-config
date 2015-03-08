@@ -26,6 +26,7 @@ set nocompatible
 
 """ Custom search stuff
 set ignorecase
+set smartcase   " Slightly better ignoring of case
 set incsearch
 set hlsearch
 
