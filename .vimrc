@@ -108,7 +108,7 @@ au FileType html RainbowToggle
 
 let g:rainbow_conf = {
       \   'guifgs': ['royalblue3', 'seagreen3', 'darkorchid3', 'firebrick3'],
-      \   'ctermfgs': ['darkblue', 'darkgray', 'darkgreen', 'darkcyan', 'darkred', 'darkmagenta'],
+      \   'ctermfgs': ['darkcyan', 'darkgray', 'darkgreen', 'darkred', 'darkmagenta'],
       \   'operators': '_,_',
       \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
       \   'separately': {
