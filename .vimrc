@@ -145,6 +145,6 @@ let g:tmuxline_preset = {
         \'b'       : ['#I:#P','#F'],
         \'win'       : ['#I', '#W'],
         \'cwin'       : ['#I', '#W'],
-        \'y'       : "#(~/.vimrc/.tmux_battery_indicator.sh)",
+        \'y'       : "#(~/.vim/.tmux_battery_indicator.sh)",
         \'z'       : '%H:%M %d-%b-%y',
         \'options' : {'status-justify' : 'left'}}
