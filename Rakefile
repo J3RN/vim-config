@@ -19,6 +19,10 @@ task :default do
   puts "Inserting Vimrc..."
   `cp .vimrc ~/`
 
+  # Tmux battery indicator
+  puts "Adding Tmux battery indicator (~/.vim/.tmux_battery_indicator.sh)"
+  `cp .tmux_battery_indicator.sh ~/.vim/`
+
   # Install plugins
   puts "Installing plugins..."
   Kernel.system("vim +PluginInstall +qall")
