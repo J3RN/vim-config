@@ -101,7 +101,7 @@ au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " Auto complete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=o
+inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=A
 
 " Easy saving
 inoremap <C-s> <ESC>:w<CR>
