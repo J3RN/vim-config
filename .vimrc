@@ -33,9 +33,13 @@ set hlsearch
 """ This seems interesting
 set ruler
 
-""" Show when I go over 80 characters
+""" Show where the 80 character limit is (except for JavaScript)
 if exists('+colorcolumn')
-  set colorcolumn=80
+  if &ft ==? "javascript"
+    set colorcolumn=120
+  else
+    set colorcolumn=80
+  endif
 endif
 
 """ Show the current mode. Just cuz
