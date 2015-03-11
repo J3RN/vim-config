@@ -73,10 +73,10 @@ map <C-n> :NERDTreeToggle<CR>
 set shell=/bin/zsh\ --login
 
 """ I was told all the cool kids did it
-imap jk <Esc>
+inoremap jk <Esc>
 
 """ Easier system for clearing searches
-nmap <C-c> :noh<CR>
+nnoremap <C-c> :noh<CR>
 
 """ Folding stuff
 set fdm=indent                        " Fold on indent, naturally
@@ -98,7 +98,7 @@ au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " Auto complete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-imap <lt>/<TAB> </<C-X><C-O>
+inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=o
 
 " Easy saving
 inoremap <C-s> <ESC>:w<CR>
