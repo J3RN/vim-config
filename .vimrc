@@ -1,4 +1,4 @@
-""" Vundle
+""" Load Vundle plugins
 runtime! common_config/*.vim
 
 """ Rails has forced me to love spaces
@@ -18,7 +18,7 @@ if $TMUX == ''
   set clipboard+=unnamed
 endif
 
-""" People told me to
+""" Who needs vi compatibility anyways?
 set nocompatible
 
 """ Enable Auto-save on startup
