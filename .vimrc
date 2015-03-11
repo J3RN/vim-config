@@ -110,13 +110,17 @@ nnoremap <C-s> :w<CR>
 """ Set GUI font for MacVim
 set guifont=Sauce\ Code\ Powerline:h12
 
-""" Rainbow parenthesis
+""" Plugin configs
+
+" Because :Gstatus is a lot to type
+nnoremap <C-g> :Gstatus<CR>
+
+" Rainbow parenthesis
 let g:rainbow_active = 1
-au FileType html RainbowToggle
 
 let g:rainbow_conf = {
       \   'guifgs': ['royalblue3', 'seagreen3', 'darkorchid3', 'firebrick3'],
-      \   'ctermfgs': ['darkcyan', 'darkgray', 'darkgreen', 'darkred', 'darkmagenta'],
+      \   'ctermfgs': ['darkcyan', 'magenta', 'green', 'darkred', 'darkmagenta', 'darkgray'],
       \   'operators': '_,_',
       \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
       \   'separately': {
@@ -130,24 +134,21 @@ let g:rainbow_conf = {
       \       'vim': {
       \           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
       \       },
-      \       'html': {
-      \           'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ > ])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
-      \       },
       \       'css': 0,
       \   }
       \}
 
-""" Have Syntastic understand AngularJS
+" Have Syntastic understand AngularJS
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
-""" Custom Vim Rails additions
+" Custom Vim Rails additions
 let g:rails_projections = {
       \ "spec/factories/*.rb":  {"command": "factory"},
       \ "config/*":             {"command": "conf" },
       \ "Gemfile":              {"command": "gemfile"},
       \ "Guardfile":            {"command": "guardfile"}}
 
-""" Custom Tmuxline preset
+" Custom Tmuxline preset
 let g:tmuxline_preset = {
         \'a'       : '#S',
         \'b'       : ['#I:#P','#F'],
