@@ -30,3 +30,10 @@ does it for me
 - Rainbow Parenthesis - Make different sets of parenthesis different colors (
 for better understandability, obviously)
 - Elixir - For Elixir support, naturally
+
+## Custom mappings
+These are some mappings that are included and I find rather convenient
+
+- CTRL-u (insert mode only) - Converts the entire line to uppercase. Handy for
+defining constants like MAX_CONNECTIONS_ALLOWED (blatantly stolen from ["Learn
+Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com))

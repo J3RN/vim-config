@@ -78,6 +78,9 @@ inoremap jk <Esc>
 """ Easier system for clearing searches
 nnoremap <C-c> :noh<CR>
 
+""" CTRL-u to convert a line to all-uppercase
+inoremap <C-u> <ESC>VUA
+
 """ Folding stuff
 set fdm=indent                        " Fold on indent, naturally
 au FileType gitcommit set fdm=manual  " Why would you fold gitcommits?
