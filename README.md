@@ -2,6 +2,10 @@
 
 Just my personal vim config. I use it.
 
+**WARNING:** Just about everything else on this page is out-of-date. *Please*
+consider this, and skim `/.vim/common_config/vundle.vim` for plugin list and
+`.vimrc` for mappings and customizations.
+
 ## Plugins
 My descriptions below are very basic. Please read the projects' pages if you
 would like to know more about them
