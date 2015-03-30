@@ -114,6 +114,7 @@ set guifont=Sauce\ Code\ Powerline:h12
 
 " Because :Gstatus is a lot to type
 nnoremap <C-g> :Gstatus<CR>
+nnoremap <leader>p :Gpush<CR>
 
 " Rainbow parenthesis
 let g:rainbow_active = 1
