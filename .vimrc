@@ -112,9 +112,12 @@ set guifont=Sauce\ Code\ Powerline:h12
 
 """ Plugin configs
 
-" Because :Gstatus is a lot to type
+" Because Fugitive commands are a lot to type
 nnoremap <C-g> :Gstatus<CR>
-nnoremap <leader>p :Gpush<CR>
+" Linux version
+nnoremap <A-p> :Gpush<CR>
+" Mac version
+nnoremap π :Gpush<CR>
 
 " Rainbow parenthesis
 let g:rainbow_active = 1
