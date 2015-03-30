@@ -138,9 +138,6 @@ let g:rainbow_conf = {
       \   }
       \}
 
-" Have Syntastic understand AngularJS
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-
 " Custom Vim Rails additions
 let g:rails_projections = {
       \ "spec/factories/*.rb":  {"command": "factory"},
@@ -157,3 +154,13 @@ let g:tmuxline_preset = {
         \'y'       : "#(~/.vim/.tmux_battery_indicator.sh)",
         \'z'       : '%H:%M %d-%b-%y',
         \'options' : {'status-justify' : 'left'}}
+
+" Have Syntastic understand AngularJS and Meteor
+let g:syntastic_html_tidy_ignore_errors=[
+      \ " proprietary attribute \"ng-",
+      \ "<template> is not recognized!",
+      \ "discarding unexpected <template>",
+      \ "discarding unexpected </template>"]
+
+" Syntastic does not understand templating
+" let syntastic_mode_map = { 'passive_filetypes': ['html']  }
