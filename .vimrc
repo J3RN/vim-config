@@ -99,16 +99,19 @@ au BufEnter * match ExtraWhitespace /\s\+$/
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
-" Auto complete HTML tags
+""" Auto complete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=A
 
-" Easy saving
+""" Easy saving
 inoremap <C-s> <ESC>:w<CR>
 nnoremap <C-s> :w<CR>
 
 """ Set GUI font for MacVim
 set guifont=Sauce\ Code\ Powerline:h12
+
+""" Correct inside HTML tag
+nnoremap ta 0f>ct<>
 
 """ Plugin configs
 
