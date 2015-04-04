@@ -38,6 +38,10 @@ for better understandability, obviously)
 ## Custom mappings
 These are some mappings that are included and I find rather convenient
 
-- CTRL-u (insert mode only) - Converts the entire line to uppercase. Handy for
+### Insert Mode
+- CTRL-u - Converts the entire line to uppercase. Handy for
 defining constants like MAX_CONNECTIONS_ALLOWED (blatantly stolen from ["Learn
 Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com))
+
+### Normal Mode
+- ALT-s - Removes all trailing whitespace (highlighted in red)
