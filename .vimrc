@@ -99,6 +99,10 @@ au BufEnter * match ExtraWhitespace /\s\+$/
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
+""" Delete extra whitespace
+nnoremap ß :%s/\s\+$//<CR>
+nnoremap <A-s> :%s/\s\+$//<CR>
+
 """ Auto complete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=A
