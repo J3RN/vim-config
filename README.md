@@ -47,4 +47,4 @@ These are some mappings that are included and I find rather convenient
 
 ### Insert Mode
 - CTRL-u - Converts the entire line to uppercase. Handy for defining constants like MAX_CONNECTIONS_ALLOWED (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com))
-- </<TAB> - Auto-complete HTML tag
+- </TAB - Auto-complete HTML tag
