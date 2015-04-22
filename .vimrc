@@ -108,8 +108,8 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=A
 
 """ Easy saving
-inoremap <C-s> <ESC>:w<CR>
-nnoremap <C-s> :w<CR>
+inoremap <C-w> <ESC>:w<CR>
+nnoremap <C-w> :w<CR>
 
 """ Set GUI font for MacVim
 set guifont=Sauce\ Code\ Powerline:h12
