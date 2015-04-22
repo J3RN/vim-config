@@ -57,9 +57,6 @@ filetype plugin indent on
 """ Enable airline bar all the time
 set laststatus=2
 
-""" Enable powerline font for airline
-let g:airline_powerline_fonts = 1
-
 """ Set vim to use 256 colors (Tmux/Vim Airline fix)
 set t_Co=256
 
@@ -118,10 +115,14 @@ nnoremap ta 0f>ct<>
 
 " Because Fugitive commands are a lot to type
 nnoremap <C-g> :Gstatus<CR>
+
 " Linux version
 nnoremap <A-p> :Gpush<CR>
 " Mac version
 nnoremap π :Gpush<CR>
+
+" Enable powerline font for airline
+let g:airline_powerline_fonts = 1
 
 " Rainbow parenthesis
 let g:rainbow_active = 1
