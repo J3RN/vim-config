@@ -21,9 +21,6 @@ endif
 """ Who needs vi compatibility anyways?
 set nocompatible
 
-""" Enable Auto-save on startup
-"let g:auto_save = 1
-
 """ Custom search stuff
 set ignorecase
 set smartcase   " Slightly better ignoring of case

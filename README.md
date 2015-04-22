@@ -10,8 +10,8 @@ consider this, and skim `/.vim/common_config/vundle.vim` for plugin list and
 My descriptions below are very basic. Please read the projects' pages if you
 would like to know more about them
 
-- AutoSave - Saves your buffer every time it changes. Can be annoying, but
-makes Vim more modern and Google Drive-esque
+- [Vundle](https://github.com/gmarik/Vundle.vim) - Plugin managers. It manages your plugins
+- [AutoSave](https://github.com/vim-scripts/vim-auto-save.git) - Saves your buffer every time it changes. Can be annoying, but makes Vim more modern and Google Drive-esque
 - NerdTree - A totally awesome tree viewing utility inside of Vim. Can be
 triggered with CTRL-n
 - Syntastic - Syntax checking. Pretty useful, I suppose

@@ -6,7 +6,6 @@ call vundle#begin()
 " Vundle your vundle
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'vim-scripts/vim-auto-save'              " Auto-save
 Plugin 'scrooloose/nerdtree'                    " Nerdtree
 Plugin 'scrooloose/syntastic'                   " Syntastic
 Plugin 'edkolev/tmuxline.vim'                   " Tmuxline
