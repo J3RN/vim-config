@@ -28,7 +28,8 @@ would like to know more about them
 - [Rainbow](https://github.com/luochen1990/rainbow) Parenthesis - Make different sets of parenthesis different colors ( for better understandability, obviously)
 - [Elixir](https://github.com/elixir-lang/vim-elixir) - For Elixir support, naturally
 - [YCM](https://github.com/Valloric/YouCompleteMe) - Tab completion. Yeah, YCM causes a whole ton of problems. Be careful.
-- [Jade](https://github.com/digitaltoad/vim-jade) - Jade syntax highlighting.
+- [Jade](https://github.com/digitaltoad/vim-jade) - Jade syntax highlighting
+- [Fish](http://github.com/dag/vim-fish) - Fish syntax highlighting and other niceties
 
 ## Custom mappings
 These are some mappings that are included and I find rather convenient
