@@ -4,6 +4,12 @@ Just my personal vim config. I use it.
 
 **Disclaimer**: My config has been slowly put together over many years by me. It is based on what I use, and my needs. Your needs very well may be different.
 
+## Requirements
+
+A [powerline font](https://github.com/powerline/fonts). I use Ubuntu Mono.
+
+YouCompleteMe has more demanding requirements, which you can find in their [README](https://github.com/Valloric/YouCompleteMe/blob/master/README.md)
+
 ## Plugins
 My descriptions below are very basic. Please read the projects' pages if you
 would like to know more about them
