@@ -12,7 +12,6 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 """ Line numbers are pretty great
 set nu
-set rnu
 
 """ TMUX fix
 if $TMUX == ''
