@@ -27,6 +27,8 @@ Plugin 'elixir-lang/vim-elixir'                 " Elixir support
 Plugin 'Valloric/YouCompleteMe'                 " Autocompletion
 Plugin 'digitaltoad/vim-jade'                   " Jade syntax highlighting
 Plugin 'dag/vim-fish'                           " For fish syntax highlighting
+Plugin 'Slava/vim-spacebars'                    " Spacebars support
+Plugin 'othree/html5.vim'                       " Better HTML5 highlighting
 
 " End Vundle
 call vundle#end()
