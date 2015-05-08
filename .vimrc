@@ -171,6 +171,3 @@ let g:syntastic_html_tidy_ignore_errors=[
       \ "<template> is not recognized!",
       \ "discarding unexpected <template>",
       \ "discarding unexpected </template>"]
-
-" Syntastic does not understand templating
-" let syntastic_mode_map = { 'passive_filetypes': ['html']  }
