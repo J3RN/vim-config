@@ -144,6 +144,7 @@ let g:rainbow_conf = {
       \           'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
       \       },
       \       'css': 0,
+      \       'html': 0,
       \   }
       \}
 
