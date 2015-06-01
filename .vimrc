@@ -70,7 +70,10 @@ set shell=/bin/zsh\ --login
 inoremap jk <Esc>
 
 """ Easier system for clearing searches
-nnoremap <C-c> :noh<CR>
+nnoremap <C-/> :noh<CR>
+
+""" Quit all with CTRL-c
+nnoremap <C-c> :qall<CR>
 
 """ CTRL-u to convert a line to all-uppercase
 inoremap <C-u> <ESC>VUA
