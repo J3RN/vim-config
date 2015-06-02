@@ -120,6 +120,9 @@ nnoremap ta 0f>ct<>
 
 """ Plugin configs
 
+" NERDTree show hidden files
+let NERDTreeShowHidden=1
+
 " Because Fugitive commands are a lot to type
 nnoremap <C-g> :Gstatus<CR>
 
