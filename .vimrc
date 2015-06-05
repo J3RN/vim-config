@@ -76,7 +76,7 @@ inoremap jk <Esc>
 nnoremap <Leader>s :noh<CR>
 
 """ Quit all with CTRL-c
-nnoremap <C-c> :qall<CR>
+nnoremap <C-c> :q<CR>
 
 """ CTRL-u to convert a line to all-uppercase
 inoremap <C-u> <ESC>VUA
