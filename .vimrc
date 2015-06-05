@@ -6,6 +6,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+""" Set leader to ,
+let mapleader=","
+
 """ JSLint and PEP8 want 4 spaces
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
@@ -70,7 +73,7 @@ set shell=/bin/zsh\ --login
 inoremap jk <Esc>
 
 """ Easier system for clearing searches
-nnoremap <C-/> :noh<CR>
+nnoremap <Leader>s :noh<CR>
 
 """ Quit all with CTRL-c
 nnoremap <C-c> :qall<CR>
