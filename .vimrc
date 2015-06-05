@@ -70,10 +70,17 @@ set shell=/bin/zsh\ --login
 inoremap jk <Esc>
 
 """ Easier system for clearing searches
-nnoremap <C-c> :noh<CR>
+nnoremap <C-/> :noh<CR>
+
+""" Quit all with CTRL-c
+nnoremap <C-c> :qall<CR>
 
 """ CTRL-u to convert a line to all-uppercase
 inoremap <C-u> <ESC>VUA
+
+""" Left and right for indentation
+noremap <Left> <<
+noremap <Right> >>
 
 """ Folding stuff
 set fdm=indent                        " Fold on indent, naturally
@@ -112,6 +119,9 @@ set guifont=Sauce\ Code\ Powerline:h12
 nnoremap ta 0f>ct<>
 
 """ Plugin configs
+
+" NERDTree show hidden files
+let NERDTreeShowHidden=1
 
 " Because Fugitive commands are a lot to type
 nnoremap <C-g> :Gstatus<CR>

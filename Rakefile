@@ -19,24 +19,9 @@ task :default do
   puts "Inserting Vimrc..."
   `cp .vimrc ~/`
 
-  # Tmux battery indicator
-  puts "Adding Tmux battery indicator (~/.vim/.tmux_battery_indicator.sh)..."
-  `cp .tmux_battery_indicator.sh ~/.vim/.tmux_battery_indicator.sh`
-
   # Install plugins
   puts "Installing plugins..."
   Kernel.system("vim +PluginInstall +qall")
-
-  puts "\n\e[32mPlease read the You Complete Me docs to finish the install"
-
-  if `uname`.include? "Darwin"
-    print "Do you want to read the YCM docs? (y/n) "
-    response = gets
-    if response[0] == "y"
-      Kernel.system("open https://github.com/Valloric/YouCompleteMe#faq")
-    end
-    print "\e[0m"
-  end
 
   puts "All done! Enjoy!"
 end
