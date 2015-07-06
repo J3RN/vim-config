@@ -110,7 +110,7 @@ inoremap <C-s> <ESC>:w<CR>
 nnoremap <C-s> :w<CR>
 
 """ Set GUI font for MacVim
-set guifont=Sauce\ Code\ Powerline:h12
+set guifont=Ubuntu\ Mono\ Powerline:h12
 
 """ Correct inside HTML tag
 nnoremap ta 0f>ct<>
