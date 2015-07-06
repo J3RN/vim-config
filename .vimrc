@@ -115,6 +115,17 @@ set guifont=Ubuntu\ Mono\ Powerline:h12
 """ Correct inside HTML tag
 nnoremap ta 0f>ct<>
 
+""" Terminal stuff
+" Open terminal with <Leader>t
+if has("nvim")
+  nnoremap <Leader>t <ESC>:term<CR>
+
+  " Escape terminal with jk
+  tnoremap jk <C-\><C-n>
+else
+  inoremap <Leader>t <ESC>:shell
+endif
+
 """ Plugin configs
 
 " NERDTree show hidden files
