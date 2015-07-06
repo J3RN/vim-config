@@ -169,9 +169,7 @@ let g:rainbow_conf = {
 " Custom Vim Rails additions
 let g:rails_projections = {
       \ "spec/factories/*.rb":  {"command": "factory"},
-      \ "config/*":             {"command": "conf" },
-      \ "Gemfile":              {"command": "gemfile"},
-      \ "Guardfile":            {"command": "guardfile"}}
+      \ "config/*":             {"command": "cnf" }}
 
 " Custom Tmuxline preset
 let g:tmuxline_preset = {
