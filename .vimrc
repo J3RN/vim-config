@@ -111,8 +111,10 @@ nnoremap <Leader>-d :%s/\s\+$//<CR>
 autocmd FileType html,erb set omnifunc=htmlcomplete#CompleteTags
 inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=A
 
-""" Easy saving
-noremap <C-s> <ESC>:w<CR>
+""" Easy saving with CTRL-s
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <ESC>:w<CR>
+vnoremap <C-s> <ESC>:w<CR>
 
 """ Set GUI font for MacVim
 set guifont=Ubuntu\ Mono\ Powerline:h12
