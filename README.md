@@ -66,8 +66,8 @@ These are some mappings that are included and I find rather convenient
 
 | Mapping | Description |
 |---------|-------------|
-| jk | Leave Insert mode (ESC) |
-| ,u | Converts the entire line to uppercase. Handy for defining constants like MAX_CONNECTIONS_ALLOWED (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com)) |
+| jk | Leave Insert mode (`ESC`) |
+| ,u | Converts the entire line to uppercase. Handy for defining constants like `MAX_CONNECTIONS_ALLOWED` (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com)) |
 | &lt;/`TAB` | Autocomplete HTML tag (works in HTML and ERB files) |
 
 ### Visual mode
