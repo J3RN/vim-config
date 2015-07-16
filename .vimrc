@@ -9,7 +9,7 @@ set expandtab
 """ Set leader to ,
 let mapleader=","
 
-""" JSLint and PEP8 want 4 spaces
+""" FileType tabbing settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
@@ -21,17 +21,17 @@ if $TMUX == ''
   set clipboard+=unnamed
 endif
 
+""" Keep cursor centered in screen
+set scrolloff=999
+
 """ Who needs vi compatibility anyways?
 set nocompatible
 
 """ Custom search stuff
-set ignorecase
-set smartcase   " Slightly better ignoring of case
-set incsearch
-set hlsearch
-
-""" This seems interesting
-set ruler
+set ignorecase  " Ignore case of searches
+set smartcase   " Used with above to only ignore sometimes
+set incsearch   " C-r C-w to complete search term
+set hlsearch    " Highlight search
 
 """ Show where the 80 character limit is (except for JavaScript)
 if exists('+colorcolumn')
@@ -42,10 +42,7 @@ if exists('+colorcolumn')
   endif
 endif
 
-""" Show the current mode. Just cuz
-set showmode
-
-""" Unix line endings. Seriously, people.
+""" Unix line endings
 set fileformat=unix
 
 """ No line wrapping
@@ -57,17 +54,11 @@ syntax on
 """ Enable the filetype plugin and indenting
 filetype plugin indent on
 
-""" Enable airline bar all the time
-set laststatus=2
-
 """ Set vim to use 256 colors (Tmux/Vim Airline fix)
 set t_Co=256
 
-""" Set NERDTree to toggle on CTRL-n
-map <C-n> :NERDTreeToggle<CR>
-
-""" Needed as I use fish
-set shell=/bin/zsh\ --login
+""" Zsh for general compatibility
+set shell=/bin/zsh
 
 """ I was told all the cool kids did it
 inoremap jk <Esc>
@@ -75,47 +66,62 @@ inoremap jk <Esc>
 """ Easier system for clearing searches
 nnoremap <Leader>s :noh<CR>
 
-""" Quit all with CTRL-c
-nnoremap <C-c> :q<CR>
+""" Copy to system clipboard easily
+vnoremap <Leader>y "+y
 
-""" CTRL-u to convert a line to all-uppercase
+""" Quit all with CTRL-c
+noremap <C-c> :q<CR>
+
+""" Easily convert a line to all-uppercase
+nnoremap <Leader>u VU
 inoremap <Leader>u <ESC>VUA
 
-""" Folding stuff
+""" Folding
 set fdm=indent                        " Fold on indent, naturally
 au FileType gitcommit set fdm=manual  " Why would you fold gitcommits?
 " All folds open by default
 au BufRead * normal zR
 
-""" Set spell checking for texty files
-autocmd FileType markdown setlocal spell spelllang=en_us
+""" Better color scheme for diffing
+au FilterWritePre * if &diff | colorscheme sol | endif
 
-""" Trailing whitespace highlighting
+""" Settings specific to Markdown editing
+autocmd FileType markdown setlocal spell spelllang=en_us
+autocmd FileType markdown setlocal wrap
+autocmd FileType markdown setlocal linebreak
+autocmd FileType markdown setlocal colorcolumn=0
+
+""" Moving around in texy files
+nnoremap j gj
+nnoremap k gk
+
+""" Trailing whitespace
+
+" Highlighting
 highlight ExtraWhitespace ctermbg=red guibg=red
 au ColorScheme * highlight ExtraWhitespace guibg=red
 au BufEnter * match ExtraWhitespace /\s\+$/
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
-""" Delete extra whitespace
-nnoremap ß :%s/\s\+$//<CR>
-nnoremap <A-s> :%s/\s\+$//<CR>
+" Delete extra whitespace
+nnoremap <Leader>-d :%s/\s\+$//<CR>
 
 """ Auto complete HTML tags
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html,erb set omnifunc=htmlcomplete#CompleteTags
 inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=A
 
 """ Easy saving
-inoremap <C-s> <ESC>:w<CR>
-nnoremap <C-s> :w<CR>
+noremap <C-s> <ESC>:w<CR>
 
 """ Set GUI font for MacVim
 set guifont=Ubuntu\ Mono\ Powerline:h12
 
 """ Correct inside HTML tag
-nnoremap ta 0f>ct<>
+nnoremap <Leader>c 0f><Right>ct<
 
-""" Terminal stuff
+""" Terminal
+
 " Open terminal with <Leader>t
 if has("nvim")
   nnoremap <Leader>t <ESC>:term<CR>
@@ -123,21 +129,25 @@ if has("nvim")
   " Escape terminal with jk
   tnoremap jk <C-\><C-n>
 else
-  inoremap <Leader>t <ESC>:shell
+  nnoremap <Leader>t <ESC>:shell
 endif
 
 """ Plugin configs
+
+" Set NERDTree to toggle on CTRL-n
+noremap <C-n> :NERDTreeToggle<CR>
+
+" Enable airline bar all the time
+set laststatus=2
 
 " NERDTree show hidden files
 let NERDTreeShowHidden=1
 
 " Because Fugitive commands are a lot to type
-nnoremap <C-g> :Gstatus<CR>
+nnoremap <Leader>g :Gstatus<CR>
 
 " Linux version
-nnoremap <A-p> :Gpush<CR>
-" Mac version
-nnoremap π :Gpush<CR>
+nnoremap <Leader>p :Gpush<CR>
 
 " Enable powerline font for airline
 let g:airline_powerline_fonts = 1
@@ -191,4 +201,6 @@ let g:syntastic_html_tidy_ignore_errors=[
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
 """ Experimental
-set mouse=a
+if has("mouse")
+  set mouse=a
+endif

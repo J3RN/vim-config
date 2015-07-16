@@ -8,8 +8,6 @@ Just my personal vim config. I use it.
 
 A [powerline font](https://github.com/powerline/fonts). I use Ubuntu Mono.
 
-YouCompleteMe has more demanding requirements, which you can find in their [README](https://github.com/Valloric/YouCompleteMe/blob/master/README.md)
-
 ## Plugins
 My descriptions below are very basic. Please read the projects' pages if you
 would like to know more about them
@@ -40,18 +38,23 @@ would like to know more about them
 ## Custom mappings
 These are some mappings that are included and I find rather convenient
 
-- jk - Leave Insert mode (ESC)
 - CTRL-n - Open NERDTree
-- CTRL-x - Save
+- CTRL-s - Save
+- CTRL-c - Quit (`:q`)
 
 ### Normal Mode
-- ALT-s - Deletes all trailing whitespace (highlighted in red)
-- CTRL-c - Clear search (:noh)
-- tt - Toggle fold (folds are based on indent)
-- ta - Correct contents of an HTML tag
-- CTRL-g - Open Fugitive's status
-- ALT-p - Use Fugitive to `git push`
+- ,s - Clear search highlighting (`:noh`)
+- ,u - Converts line to uppercase
+- ,d - Deletes all trailing whitespace (highlighted in red)
+- ,c - Correct contents of an HTML tag
+- ,p - Use Fugitive to `git push`
+- ,g - Open Fugitive's status
+- ,t - Open a terminal (works best in [Neovim](https://github.com/neovim/neovim))
 
 ### Insert Mode
-- CTRL-u - Converts the entire line to uppercase. Handy for defining constants like MAX_CONNECTIONS_ALLOWED (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com))
-- </TAB - Auto-complete HTML tag
+- jk - Leave Insert mode (ESC)
+- ,u - Converts the entire line to uppercase. Handy for defining constants like MAX_CONNECTIONS_ALLOWED (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com))
+- &lt;/`TAB` - Auto-complete HTML tag (works in HTML and ERB files)
+
+### Visual mode
+- ,y - Copy selection to system clipboard
