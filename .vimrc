@@ -131,7 +131,7 @@ if has("nvim")
   " Escape terminal with jk
   tnoremap jk <C-\><C-n>
 else
-  nnoremap <Leader>t <ESC>:shell
+  nnoremap <Leader>t <ESC>:shell<CR>
 endif
 
 """ Plugin configs
