@@ -206,3 +206,6 @@ let g:syntastic_html_tidy_ignore_errors=[
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
+" RSpec.vim mappings
+map <Leader>f :call RunCurrentSpecFile()<CR>
+map <Leader>a :call RunAllSpecs()<CR>

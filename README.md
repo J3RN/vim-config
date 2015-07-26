@@ -61,6 +61,8 @@ These are some mappings that are included and I find rather convenient
 | ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
 | ,p | Use Fugitive to `git push` |
 | ,g | Open Fugitive's status |
+| ,f | Run specs for the current file |
+| ,a | Run all specs |
 
 ### Insert Mode
 
