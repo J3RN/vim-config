@@ -133,6 +133,11 @@ else
   nnoremap <Leader>t <ESC>:shell<CR>
 endif
 
+""" Experimental
+if has("mouse")
+  set mouse=a
+endif
+
 """ Plugin configs
 
 " Set NERDTree to toggle on CTRL-n
@@ -201,7 +206,3 @@ let g:syntastic_html_tidy_ignore_errors=[
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
-""" Experimental
-if has("mouse")
-  set mouse=a
-endif
