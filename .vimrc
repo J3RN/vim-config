@@ -74,7 +74,6 @@ noremap <C-c> :q<CR>
 
 """ Easily convert a line to all-uppercase
 nnoremap <Leader>u VU
-inoremap <Leader>u <ESC>VUA
 
 """ Folding
 set fdm=indent                        " Fold on indent, naturally
