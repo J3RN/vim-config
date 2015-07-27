@@ -22,7 +22,7 @@ if $TMUX == ''
 endif
 
 """ Keep cursor centered in screen
-set scrolloff=999
+set scrolloff=5
 
 """ Who needs vi compatibility anyways?
 set nocompatible
