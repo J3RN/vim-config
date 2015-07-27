@@ -84,6 +84,7 @@ au BufRead * normal zR
 
 """ Better color scheme for diffing
 au FilterWritePre * if &diff | colorscheme sol | endif
+au FilterWritePost * colorscheme default
 
 """ Settings specific to Markdown editing
 autocmd FileType markdown setlocal spell spelllang=en_us
