@@ -108,9 +108,13 @@ au InsertLeave * match ExtraWhiteSpace /\s\+$/
 " Delete extra whitespace
 nnoremap <Leader>-d :%s/\s\+$//<CR>
 
-""" Auto complete HTML tags
-autocmd FileType html,erb set omnifunc=htmlcomplete#CompleteTags
-inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=A
+""" Completion
+
+" Omnicompletion based on syntax
+set omnifunc=syntaxcomplete#Complete
+
+" Auto complete HTML tags
+inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=%a
 
 """ Easy saving with CTRL-s
 nnoremap <C-s> :w<CR>
