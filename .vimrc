@@ -74,7 +74,6 @@ noremap <C-c> :q<CR>
 
 """ Easily convert a line to all-uppercase
 nnoremap <Leader>u VU
-inoremap <Leader>u <ESC>VUA
 
 """ Folding
 set fdm=indent                        " Fold on indent, naturally
@@ -106,7 +105,7 @@ au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " Delete extra whitespace
-nnoremap <Leader>-d :%s/\s\+$//<CR>
+nnoremap <Leader>d :%s/\s\+$//<CR>
 
 """ Completion
 
@@ -136,7 +135,12 @@ if has("nvim")
   " Escape terminal with jk
   tnoremap jk <C-\><C-n>
 else
-  nnoremap <Leader>t <ESC>:shell
+  nnoremap <Leader>t <ESC>:shell<CR>
+endif
+
+""" Experimental
+if has("mouse")
+  set mouse=a
 endif
 
 """ Plugin configs
@@ -207,7 +211,6 @@ let g:syntastic_html_tidy_ignore_errors=[
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
-""" Experimental
-if has("mouse")
-  set mouse=a
-endif
+" RSpec.vim mappings
+map <Leader>f :call RunCurrentSpecFile()<CR>
+map <Leader>a :call RunAllSpecs()<CR>

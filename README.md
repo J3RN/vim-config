@@ -55,19 +55,20 @@ These are some mappings that are included and I find rather convenient
 | Mapping | Description|
 |---------|------------|
 | ,s | Clear search highlighting (`:noh`) |
-| ,u | Converts line to uppercase |
+| ,u | Converts the entire line to uppercase (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com)) |
 | ,d | Deletes all trailing whitespace (highlighted in red) |
 | ,c | Correct contents of an HTML tag |
+| ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
 | ,p | Use Fugitive to `git push` |
 | ,g | Open Fugitive's status |
-| ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
+| ,f | Run specs for the current file |
+| ,a | Run all specs |
 
 ### Insert Mode
 
 | Mapping | Description |
 |---------|-------------|
 | jk | Leave Insert mode (`ESC`) |
-| ,u | Converts the entire line to uppercase. Handy for defining constants like `MAX_CONNECTIONS_ALLOWED` (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com)) |
 | &lt;/`TAB` | Autocomplete HTML tag (works in HTML and ERB files) |
 
 ### Visual mode
