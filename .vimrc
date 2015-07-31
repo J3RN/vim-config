@@ -82,8 +82,15 @@ au FileType gitcommit set fdm=manual  " Why would you fold gitcommits?
 au BufRead * normal zR
 
 """ Better color scheme for diffing
-au FilterWritePre * if &diff | colorscheme sol | endif
-au FilterWritePost * colorscheme default
+function SetDiffColors()
+  hi DiffAdd                   ctermfg=254 ctermbg=22
+  hi DiffDelete                ctermfg=16 ctermbg=52 cterm=bold
+  hi DiffChange                ctermfg=15 ctermbg=90
+  hi DiffText                  ctermfg=16 ctermbg=3 cterm=bold
+endfunction
+
+au BufEnter * if &diff | call SetDiffColors() | endif
+if &diff | call SetDiffColors() | endif
 
 """ Settings specific to Markdown editing
 autocmd FileType markdown setlocal spell spelllang=en_us
