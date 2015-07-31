@@ -134,6 +134,7 @@ if has("nvim")
 
   " Escape terminal with jk
   tnoremap jk <C-\><C-n>
+  tnoremap <C-w> <C-\><C-n><C-w>
 else
   nnoremap <Leader>t <ESC>:shell<CR>
 endif
