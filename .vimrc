@@ -137,13 +137,13 @@ nnoremap <Leader>c 0f><Right>ct<
 
 " Open terminal with <Leader>t
 if has("nvim")
-  nnoremap <Leader>t <ESC>:term<CR>
+  nnoremap <Leader>t <ESC>:term fish<CR>
 
   " Escape terminal with jk
   tnoremap jk <C-\><C-n>
   tnoremap <C-w> <C-\><C-n><C-w>
 else
-  nnoremap <Leader>t <ESC>:shell<CR>
+  nnoremap <Leader>t <ESC>:!fish<CR>
 endif
 
 """ Experimental
