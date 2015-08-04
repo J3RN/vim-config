@@ -142,6 +142,8 @@ if has("nvim")
   " Escape terminal with jk
   tnoremap jk <C-\><C-n>
   tnoremap <C-w> <C-\><C-n><C-w>
+
+  au BufEnter * if bufname("%") =~ "term://" | startinsert | endif
 else
   nnoremap <Leader>t <ESC>:!fish<CR>
 endif
