@@ -99,8 +99,17 @@ autocmd FileType markdown setlocal linebreak
 autocmd FileType markdown setlocal colorcolumn=0
 
 """ Moving around in texy files
+" Normal mode
 nnoremap j gj
 nnoremap k gk
+nnoremap $ g$
+nnoremap 0 g0
+
+" Visual mode
+vnoremap j gj
+vnoremap k gk
+vnoremap $ g$
+vnoremap 0 g0
 
 """ Trailing whitespace
 
