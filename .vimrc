@@ -91,24 +91,29 @@ endfunction
 
 au BufEnter * if &diff | call SetDiffColors() | endif
 
-""" Settings specific to Markdown editing
-autocmd FileType markdown setlocal spell spelllang=en_us
-autocmd FileType markdown setlocal wrap
-autocmd FileType markdown setlocal linebreak
-autocmd FileType markdown setlocal colorcolumn=0
+""" Settings specific to non-code editing
+function SetupForText()
+  "" Various
+  setlocal spell spelllang=en_us
+  setlocal wrap
+  setlocal linebreak
+  setlocal colorcolumn=0
 
-""" Moving around in texy files
-" Normal mode
-nnoremap j gj
-nnoremap k gk
-nnoremap $ g$
-nnoremap 0 g0
+  "" Moving around in texy files
+  " Normal mode
+  nnoremap <buffer> j gj
+  nnoremap <buffer> k gk
+  nnoremap <buffer> $ g$
+  nnoremap <buffer> 0 g0
 
-" Visual mode
-vnoremap j gj
-vnoremap k gk
-vnoremap $ g$
-vnoremap 0 g0
+  " Visual mode
+  vnoremap <buffer> j gj
+  vnoremap <buffer> k gk
+  vnoremap <buffer> $ g$
+  vnoremap <buffer> 0 g0
+endfunction
+
+autocmd FileType markdown call SetupForText()
 
 """ Trailing whitespace
 
