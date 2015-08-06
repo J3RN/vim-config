@@ -90,7 +90,6 @@ function SetDiffColors()
 endfunction
 
 au BufEnter * if &diff | call SetDiffColors() | endif
-if &diff | call SetDiffColors() | endif
 
 """ Settings specific to Markdown editing
 autocmd FileType markdown setlocal spell spelllang=en_us
