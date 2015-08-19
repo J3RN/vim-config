@@ -178,9 +178,9 @@ let NERDTreeShowHidden=1
 
 " Because Fugitive commands are a lot to type
 nnoremap <Leader>g :Gstatus<CR>
-
-" Linux version
 nnoremap <Leader>p :Gpush<CR>
+nnoremap <Leader>o :Gpull<CR>
+nnoremap <Leader>b :Gblame<CR>
 
 " Enable powerline font for airline
 let g:airline_powerline_fonts = 1
