@@ -4,6 +4,9 @@ runtime! common_config/*.vim
 """ Set leader to ,
 let mapleader=","
 
+""" Better :
+nnoremap : q:i
+
 """ FileType tabbing settings
 autocmd FileType javascript,json setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab
