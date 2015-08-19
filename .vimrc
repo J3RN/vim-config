@@ -8,9 +8,12 @@ let mapleader=","
 nnoremap : q:i
 
 """ FileType tabbing settings
-autocmd FileType javascript,json setlocal shiftwidth=4 tabstop=4 expandtab
-autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab
-autocmd FileType ruby,fish,bash,zsh setlocal tabstop=2 shiftwidth=2 expandtab
+" Default
+set tabstop=2 shiftwidth=2 expandtab
+" Specifics
+autocmd FileType c setlocal tabstop=8 shiftwidth=8 noexpandtab
+autocmd FileType javascript,json setlocal shiftwidth=4 tabstop=4
+autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
 """ Line numbers are pretty great
 set nu
