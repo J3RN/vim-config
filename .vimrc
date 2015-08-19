@@ -1,17 +1,13 @@
 """ Load Vundle plugins
 runtime! common_config/*.vim
 
-""" Rails has forced me to love spaces
-set tabstop=2
-set shiftwidth=2
-set expandtab
-
 """ Set leader to ,
 let mapleader=","
 
 """ FileType tabbing settings
-autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
-autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
+autocmd FileType javascript,json setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType ruby,fish,bash,zsh setlocal tabstop=2 shiftwidth=2 expandtab
 
 """ Line numbers are pretty great
 set nu
