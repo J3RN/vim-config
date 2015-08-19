@@ -26,6 +26,9 @@ endif
 """ Keep cursor centered in screen
 set scrolloff=5
 
+""" Listchars, should you want them
+set listchars=eol:$,tab:»·,space:·
+
 """ Who needs vi compatibility anyways?
 set nocompatible
 
