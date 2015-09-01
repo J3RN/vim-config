@@ -72,6 +72,7 @@ These are some mappings that are included and I find rather convenient
 |---------|-------------|
 | jk | Leave Insert mode (`ESC`) |
 | &lt;/`TAB` | Autocomplete HTML tag (works in HTML and ERB files) |
+| ,h | Create an HTML tag with what is currently under the cursor |
 
 ### Visual mode
 
