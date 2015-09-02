@@ -55,16 +55,15 @@ These are some mappings that are included and I find rather convenient
 | Mapping | Description|
 |---------|------------|
 | ,s | Clear search highlighting (`:noh`) |
-| ,u | Converts the entire line to uppercase (blatantly stolen from ["Learn Vimscript the Hard Way"](http://learnvimscriptthehardway.stevelosh.com)) |
 | ,d | Deletes all trailing whitespace (highlighted in red) |
 | ,c | Correct contents of an HTML tag |
-| ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
-| ,g | Open Fugitive's status |
+| ,g | Use Fugitive to open the `git` status |
 | ,p | Use Fugitive to `git push` |
 | ,o | Use Fugitive to `git pull` |
 | ,b | Use Fugitive to `git blame` |
-| ,f | Run specs for the current file |
-| ,a | Run all specs |
+| ,m | Use Fugitive to `git checkout -b` |
+| : | Open the multi-line console, as usually opened by `q:` |
+| ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
 
 ### Insert Mode
 
@@ -79,3 +78,10 @@ These are some mappings that are included and I find rather convenient
 | Mapping | Description |
 |---------|-------------|
 | ,y | Copy selection to system clipboard |
+
+### Terminal mode (Neovim Only)
+
+| Mapping | Description |
+|---------|-------------|
+| jk | Exit insert mode in terminal |
+| `CTRL`w | Exit insert mode and trigger `CTRL`w |

@@ -4,9 +4,6 @@ runtime! common_config/*.vim
 """ Set leader to ,
 let mapleader=","
 
-""" Better :
-nnoremap : q:i
-
 """ FileType tabbing settings
 " Default
 set tabstop=2 shiftwidth=2 expandtab
@@ -65,20 +62,6 @@ set t_Co=256
 """ Zsh for general compatibility
 set shell=/bin/zsh
 
-""" I was told all the cool kids did it
-inoremap jk <Esc>
-
-""" Easier system for clearing searches
-nnoremap <Leader>s :noh<CR>
-
-""" Copy to system clipboard easily
-vnoremap <Leader>y "+y
-
-""" Quit all with CTRL-c
-noremap <C-c> :q<CR>
-
-""" Easily convert a line to all-uppercase
-nnoremap <Leader>u VU
 
 """ Folding
 set fdm=indent                        " Fold on indent, naturally
@@ -129,67 +112,85 @@ au BufEnter * match ExtraWhitespace /\s\+$/
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
-" Delete extra whitespace
-nnoremap <Leader>d :%s/\s\+$//<CR>
 
 """ Completion
 
 " Omnicompletion based on syntax
 set omnifunc=syntaxcomplete#Complete
 
-" Auto complete HTML tags
-inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=%a
-
-" Create HTML tags
-inoremap <Leader>h <ESC>"adiwa<<C-r>a></<C-r>a><ESC>%i
-
-""" Easy saving with CTRL-s
-nnoremap <C-s> :w<CR>
-inoremap <C-s> <ESC>:w<CR>
-vnoremap <C-s> <ESC>:w<CR>
-
 """ Set GUI font for MacVim
 set guifont=Ubuntu\ Mono\ Powerline:h12
 
-""" Correct inside HTML tag
-nnoremap <Leader>c 0f><Right>ct<
-
-""" Terminal
-
-" Open terminal with <Leader>t
+""" Auto-insert when entering a terminal
 if has("nvim")
-  nnoremap <Leader>t <ESC>:term fish<CR>
-
-  " Escape terminal with jk
-  tnoremap jk <C-\><C-n>
-  tnoremap <C-w> <C-\><C-n><C-w>
-
   au BufEnter * if bufname("%") =~ "term://" | startinsert | endif
-else
-  nnoremap <Leader>t <ESC>:!fish<CR>
 endif
 
-""" Experimental
+""" Mouse mode, if available
 if has("mouse")
   set mouse=a
 endif
 
-""" Plugin configs
+""" Mappings
 
-" Set NERDTree to toggle on CTRL-n
+"" All modes
+" NERDTree
 noremap <C-n> :NERDTreeToggle<CR>
+" Save with CTRL-s
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <ESC>:w<CR>
+vnoremap <C-s> <ESC>:w<CR>
+" Quit with CTRL-c
+noremap <C-c> :q<CR>
+
+"" Normal mode
+" Clear Serach
+nnoremap <Leader>s :noh<CR>
+" Delete extra whitespace
+nnoremap <Leader>d :%s/\s\+$//<CR>
+" Correct inside HTML tag
+nnoremap <Leader>c 0f><Right>ct<
+" Fugitive commands
+nnoremap <Leader>g :Gstatus<CR>
+nnoremap <Leader>p :Gpush<CR>
+nnoremap <Leader>o :Gpull<CR>
+nnoremap <Leader>b :Gblame<CR>
+nnoremap <Leader>m :Git checkout -b
+""" Better :
+nnoremap : q:i
+" Terminal
+if has("nvim")
+  nnoremap <Leader>t <ESC>:term fish<CR>
+else
+  nnoremap <Leader>t <ESC>:!fish<CR>
+endif
+
+"" Insert Mode
+" I was told all the cool kids did it
+inoremap jk <Esc>
+" Auto complete HTML tags
+inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=%a
+" Create HTML tags
+inoremap <Leader>h <ESC>"adiwa<<C-r>a></<C-r>a><ESC>%i
+
+"" Visual Mode
+" Copy to system clipboard easily
+vnoremap <Leader>y "+y
+
+"" Terminal mode (nvim only)
+if has("nvim")
+  " Escape terminal with jk
+  tnoremap jk <C-\><C-n>
+  tnoremap <C-w> <C-\><C-n><C-w>
+endif
+
+""" Plugin configs
 
 " Enable airline bar all the time
 set laststatus=2
 
 " NERDTree show hidden files
 let NERDTreeShowHidden=1
-
-" Because Fugitive commands are a lot to type
-nnoremap <Leader>g :Gstatus<CR>
-nnoremap <Leader>p :Gpush<CR>
-nnoremap <Leader>o :Gpull<CR>
-nnoremap <Leader>b :Gblame<CR>
 
 " Enable powerline font for airline
 let g:airline_powerline_fonts = 1
