@@ -140,6 +140,9 @@ set omnifunc=syntaxcomplete#Complete
 " Auto complete HTML tags
 inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=%a
 
+" Create HTML tags
+inoremap <Leader>h <ESC>"adiwa<<C-r>a></<C-r>a><ESC>%i
+
 """ Easy saving with CTRL-s
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>
