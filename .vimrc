@@ -78,6 +78,12 @@ endfunction
 
 au BufEnter * if &diff | call SetDiffColors() | endif
 
+""" Function to push the current git branch and set an upstream
+function PushAndSetUpstream()
+  let current_branch = system("git symbolic-ref --short HEAD")
+  echo system("git push -u origin ".current_branch)
+endfunction
+
 """ Settings specific to non-code editing
 function SetupForText()
   "" Various
@@ -149,11 +155,13 @@ nnoremap <Leader>d :%s/\s\+$//<CR>
 " Correct inside HTML tag
 nnoremap <Leader>c 0f><Right>ct<
 " Fugitive commands
-nnoremap <Leader>g :Gstatus<CR>
-nnoremap <Leader>p :Gpush<CR>
-nnoremap <Leader>o :Gpull<CR>
-nnoremap <Leader>b :Gblame<CR>
-nnoremap <Leader>m :Git checkout -b
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gp :Gpush<CR>
+nnoremap <Leader>go :Gpull<CR>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gm :Git checkout -b 
+nnoremap <Leader>gc :Git checkout 
+nnoremap <Leader>gu :call PushAndSetUpstream()<CR>
 """ Better :
 nnoremap : q:i
 " Terminal
