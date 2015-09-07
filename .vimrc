@@ -62,7 +62,6 @@ set t_Co=256
 """ Zsh for general compatibility
 set shell=/bin/zsh
 
-
 """ Folding
 set fdm=indent                        " Fold on indent, naturally
 au FileType gitcommit set fdm=manual  " Why would you fold gitcommits?
@@ -111,7 +110,6 @@ au ColorScheme * highlight ExtraWhitespace guibg=red
 au BufEnter * match ExtraWhitespace /\s\+$/
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
-
 
 """ Completion
 
@@ -242,3 +240,6 @@ let g:syntastic_html_tidy_ignore_errors=[
       \ "discarding unexpected </template>"]
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+" Technically this is global, but here set for vim-gitgutter
+set updatetime=750

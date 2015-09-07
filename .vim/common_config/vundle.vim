@@ -29,6 +29,7 @@ Plugin 'dag/vim-fish'                           " For fish syntax highlighting
 Plugin 'Slava/vim-spacebars'                    " Spacebars support
 Plugin 'othree/html5.vim'                       " Better HTML5 highlighting
 Plugin 'keith/rspec.vim'                        " RSpec syntax highlighting
+Plugin 'airblade/vim-gitgutter'                 " Git gutter. It's cool!
 
 " End Vundle
 call vundle#end()
