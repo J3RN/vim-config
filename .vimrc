@@ -197,6 +197,8 @@ set laststatus=2
 
 " NERDTree show hidden files
 let NERDTreeShowHidden=1
+" But not Vim swap files
+let NERDTreeIgnore = ['\.swp$']
 
 " Enable powerline font for airline
 let g:airline_powerline_fonts = 1
