@@ -30,6 +30,7 @@ Plugin 'Slava/vim-spacebars'                    " Spacebars support
 Plugin 'othree/html5.vim'                       " Better HTML5 highlighting
 Plugin 'keith/rspec.vim'                        " RSpec syntax highlighting
 Plugin 'airblade/vim-gitgutter'                 " Git gutter. It's cool!
+Plugin 'rust-lang/rust.vim'                     " Rust!
 
 " End Vundle
 call vundle#end()
