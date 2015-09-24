@@ -24,7 +24,9 @@ endif
 set scrolloff=5
 
 """ Listchars, should you want them
-set listchars=eol:$,tab:»·,space:·
+set listchars=eol:$,tab:»»,space:·
+hi NonText ctermfg=8
+hi SpecialKey ctermfg=8
 
 """ Who needs vi compatibility anyways?
 set nocompatible
