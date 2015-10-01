@@ -9,7 +9,7 @@ let mapleader=","
 set tabstop=2 shiftwidth=2 expandtab
 " Specifics
 autocmd FileType c setlocal tabstop=8 shiftwidth=8 noexpandtab
-autocmd FileType javascript,json setlocal shiftwidth=4 tabstop=4
+autocmd FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
 autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
 """ Line numbers are pretty great
