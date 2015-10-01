@@ -1,14 +1,19 @@
 #! /bin/sh
 
-# Link .vim
+function move_if_exists() {
+  if [ -e $HOME/$1 ]; then
+    echo "Moving ~/$1 to ~/$1.old"
+    mv -f $HOME/$1 $HOME/$1.old
+  fi
+}
+
 echo "Linking .vim directory..."
-
-if [ -e "$HOME/.vim" ]; then
-  echo "Moving ~/.vim directory to ~/.vim.old"
-  mv -f "$HOME/.vim" "$HOME/.vim.old"
-fi
-
+move_if_exists ".vim"
 ln -si "$(pwd)/.vim" "$HOME"
+
+echo "Linking .vimrc..."
+move_if_exists ".vimrc"
+ln -si "$(pwd)/.vimrc" "$HOME"
 
 # Install Vundle
 if [ ! -e "$HOME/.vim/bundle/Vundle.vim" ]; then
@@ -16,17 +21,19 @@ if [ ! -e "$HOME/.vim/bundle/Vundle.vim" ]; then
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
-# Link .vimrc
-echo "Linking .vimrc..."
-
-if [ -e "$HOME/.vimrc" ]; then
-  echo "Moving your ~/.vimrc to ~/.vimrc.old"
-  mv -f "$HOME/.vimrc" "$HOME/.vimrc.old"
-fi
-
-ln -si "$(pwd)/.vimrc" "$HOME"
-
 echo "Installing plugins..."
 vim +PluginInstall +qall
+
+if hash nvim > /dev/null; then
+  echo "Linking for NeoVim"
+  move_if_exists ".nvimrc"
+  ln -si $HOME/.vimrc $HOME/.nvimrc
+
+  move_if_exists ".nvim"
+  ln -si $HOME/.vim/ $HOME/.nvim
+fi
+
+echo "Installing NeoVim plugins..."
+nvim +PluginInstall +qall
 
 echo "All done! Enjoy!"
