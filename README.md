@@ -62,6 +62,8 @@ These are some mappings that are included and I find rather convenient
 | ,o | Use Fugitive to `git pull` |
 | ,b | Use Fugitive to `git blame` |
 | ,m | Use Fugitive to `git checkout -b` |
+| ,u | Execute `git push -u origin <current-branch>` |
+| ,f | Execute `git push -f origin <current-branch>` |
 | : | Open the multi-line console, as usually opened by `q:` |
 | ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
 

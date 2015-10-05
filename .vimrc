@@ -86,6 +86,11 @@ function PushAndSetUpstream()
   echo system("git push -u origin ".current_branch)
 endfunction
 
+function ForcePush()
+  let current_branch = system("git symbolic-ref --short HEAD")
+  echo system("git push -f origin ".current_branch)
+endfunction
+
 """ Settings specific to non-code editing
 function SetupForText()
   "" Various
@@ -164,6 +169,7 @@ nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gm :Git checkout -b 
 nnoremap <Leader>gc :Git checkout 
 nnoremap <Leader>gu :call PushAndSetUpstream()<CR>
+nnoremap <Leader>gf :call ForcePush()<CR>
 """ Better :
 nnoremap : q:i
 " Terminal
