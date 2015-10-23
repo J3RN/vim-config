@@ -31,6 +31,7 @@ Plugin 'othree/html5.vim'                       " Better HTML5 highlighting
 Plugin 'keith/rspec.vim'                        " RSpec syntax highlighting
 Plugin 'airblade/vim-gitgutter'                 " Git gutter. It's cool!
 Plugin 'rust-lang/rust.vim'                     " Rust!
+Plugin 'rking/ag.vim'                           " Silver searcher in Vim
 
 " End Vundle
 call vundle#end()
