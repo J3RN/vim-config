@@ -31,9 +31,9 @@ if hash nvim > /dev/null; then
 
   move_if_exists ".nvim"
   ln -si $HOME/.vim/ $HOME/.nvim
-fi
 
-echo "Installing NeoVim plugins..."
-nvim +PluginInstall +qall
+  echo "Installing NeoVim plugins..."
+  nvim +PluginInstall +qall
+fi
 
 echo "All done! Enjoy!"
