@@ -237,6 +237,7 @@ let g:rainbow_conf = {
 
 " Custom Vim Rails additions
 let g:rails_projections = {
+      \ "app/workers/*.rb":     {"command": "worker"},
       \ "spec/factories/*.rb":  {"command": "factory"},
       \ "config/*":             {"command": "cnf" }}
 
