@@ -166,6 +166,7 @@ nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gp :Gpush<CR>
 nnoremap <Leader>go :Gpull<CR>
 nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gm :Git checkout -b 
 nnoremap <Leader>gc :Git checkout 
 nnoremap <Leader>gu :call PushAndSetUpstream()<CR>

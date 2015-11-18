@@ -61,6 +61,7 @@ These are some mappings that are included and I find rather convenient
 | ,p | Use Fugitive to `git push` |
 | ,o | Use Fugitive to `git pull` |
 | ,b | Use Fugitive to `git blame` |
+| ,d | Use Fugitive to `git diff` |
 | ,m | Use Fugitive to `git checkout -b` |
 | ,u | Execute `git push -u origin <current-branch>` |
 | ,f | Execute `git push -f origin <current-branch>` |
