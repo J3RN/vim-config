@@ -199,6 +199,9 @@ if has("nvim")
   tnoremap <C-w> <C-\><C-n><C-w>
 endif
 
+"" Auto-read HTML skeleton
+au BufNewFile *.html :read ~/.vim/html-template.html
+
 """ Plugin configs
 
 " Enable airline bar all the time
