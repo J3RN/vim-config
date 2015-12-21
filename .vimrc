@@ -199,6 +199,9 @@ if has("nvim")
   tnoremap <C-w> <C-\><C-n><C-w>
 endif
 
+"" HTML template
+au BufNewFile *.html 0r ~/.vim/common_config/template.html
+
 """ Plugin configs
 
 " Enable airline bar all the time
