@@ -252,7 +252,7 @@ let g:tmuxline_preset = {
         \'win'       : ['#I', '#W'],
         \'cwin'       : ['#I', '#W'],
         \'y'       : "#(~/.vim/.tmux_battery_indicator.sh)",
-        \'z'       : '%H:%M %d-%b-%y',
+        \'z'       : '%Y-%m-%d %H:%M',
         \'options' : {'status-justify' : 'left'}}
 
 " Have Syntastic understand AngularJS and Meteor
