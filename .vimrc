@@ -199,8 +199,8 @@ if has("nvim")
   tnoremap <C-w> <C-\><C-n><C-w>
 endif
 
-"" Auto-read HTML skeleton
-au BufNewFile *.html :read ~/.vim/html-template.html
+"" HTML template
+au BufNewFile *.html 0r ~/.vim/common_config/template.html
 
 """ Plugin configs
 
@@ -252,7 +252,7 @@ let g:tmuxline_preset = {
         \'win'       : ['#I', '#W'],
         \'cwin'       : ['#I', '#W'],
         \'y'       : "#(~/.vim/.tmux_battery_indicator.sh)",
-        \'z'       : '%H:%M %d-%b-%y',
+        \'z'       : '%Y-%m-%d %H:%M',
         \'options' : {'status-justify' : 'left'}}
 
 " Have Syntastic understand AngularJS and Meteor
