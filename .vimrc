@@ -8,9 +8,9 @@ let mapleader=","
 " Default
 set tabstop=2 shiftwidth=2 expandtab
 " Specifics
-autocmd FileType c setlocal tabstop=8 shiftwidth=8 noexpandtab
-autocmd FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
-autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
+au FileType c setlocal tabstop=8 shiftwidth=8 noexpandtab
+au FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
+au FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
 """ Line numbers are pretty great
 set nu
@@ -113,7 +113,7 @@ function SetupForText()
   vnoremap <buffer> 0 g0
 endfunction
 
-autocmd FileType markdown call SetupForText()
+au FileType markdown call SetupForText()
 
 """ Trailing whitespace
 
