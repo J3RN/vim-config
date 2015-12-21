@@ -32,6 +32,7 @@ Plugin 'keith/rspec.vim'                        " RSpec syntax highlighting
 Plugin 'airblade/vim-gitgutter'                 " Git gutter. It's cool!
 Plugin 'rust-lang/rust.vim'                     " Rust!
 Plugin 'rking/ag.vim'                           " Silver searcher in Vim
+Plugin 'rizzatti/dash.vim'                      " Launch Dash from Vim
 
 " End Vundle
 call vundle#end()
