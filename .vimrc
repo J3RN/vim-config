@@ -8,7 +8,7 @@ let mapleader=","
 " Default
 set tabstop=2 shiftwidth=2 expandtab
 " Specifics
-au FileType c setlocal tabstop=8 shiftwidth=8 noexpandtab
+au FileType c,arduino setlocal tabstop=8 shiftwidth=8 noexpandtab
 au FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
 au FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
