@@ -184,7 +184,7 @@ endif
 " I was told all the cool kids did it
 inoremap jk <Esc>
 " Auto complete HTML tags
-inoremap <lt>/<TAB> </<C-X><C-O><ESC>V=%a
+inoremap <lt>/<TAB> <ESC>mqa</<C-X><C-O><ESC>V=`q<left>%a
 " Create HTML tags
 inoremap <Leader>h <ESC>"adiwa<<C-r>a></<C-r>a><ESC>%i
 
