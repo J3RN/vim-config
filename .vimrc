@@ -173,8 +173,8 @@ nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gm :Git checkout -b 
 nnoremap <Leader>gc :Git checkout 
-nnoremap <Leader>gu :call PushAndSetUpstream()<CR>
-nnoremap <Leader>gf :call ForcePush()<CR>
+nnoremap <silent> <Leader>gu :call PushAndSetUpstream()<CR>
+nnoremap <silent> <Leader>gf :call ForcePush()<CR>
 """ Better :
 nnoremap : q:i
 " Terminal
