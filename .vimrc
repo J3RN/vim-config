@@ -71,7 +71,7 @@ au FileType gitcommit set fdm=manual  " Why would you fold gitcommits?
 au BufRead * normal zR
 
 """ Better color scheme for diffing
-function SetDiffColors()
+function! SetDiffColors()
   hi DiffAdd                   ctermfg=254 ctermbg=22
   hi DiffDelete                ctermfg=16 ctermbg=52 cterm=bold
   hi DiffChange                ctermfg=15 ctermbg=90
@@ -81,18 +81,18 @@ endfunction
 au BufEnter * if &diff | call SetDiffColors() | endif
 
 """ Function to push the current git branch and set an upstream
-function PushAndSetUpstream()
+function! PushAndSetUpstream()
   let current_branch = system("git symbolic-ref --short HEAD")
   echo system("git push -u origin ".current_branch)
 endfunction
 
-function ForcePush()
+function! ForcePush()
   let current_branch = system("git symbolic-ref --short HEAD")
   echo system("git push -f origin ".current_branch)
 endfunction
 
 """ Settings specific to non-code editing
-function SetupForText()
+function! SetupForText()
   "" Various
   setlocal spell spelllang=en_us
   setlocal wrap
