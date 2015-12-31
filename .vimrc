@@ -74,14 +74,10 @@ set foldmethod=indent                 " Fold on indent, naturally
 set foldlevelstart=20                 " Start basicall all unfolded
 
 """ Better color scheme for diffing
-function! SetDiffColors()
-  hi DiffAdd                   ctermfg=254 ctermbg=22
-  hi DiffDelete                ctermfg=16 ctermbg=52 cterm=bold
-  hi DiffChange                ctermfg=15 ctermbg=90
-  hi DiffText                  ctermfg=16 ctermbg=3 cterm=bold
-endfunction
-
-autocmd BufEnter * if &diff | call SetDiffColors() | endif
+hi DiffAdd      ctermfg=254 ctermbg=22
+hi DiffDelete   ctermfg=16 ctermbg=52 cterm=bold
+hi DiffChange   ctermfg=15 ctermbg=90
+hi DiffText     ctermfg=16 ctermbg=3 cterm=bold
 
 """ More Git functions not provided by vim-fugitive
 function! PushAndSetUpstream()
