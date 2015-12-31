@@ -102,14 +102,9 @@ function! SetupForText()
   " Normal mode
   nnoremap <buffer> j gj
   nnoremap <buffer> k gk
-  nnoremap <buffer> $ g$
-  nnoremap <buffer> 0 g0
-
   " Visual mode
   vnoremap <buffer> j gj
   vnoremap <buffer> k gk
-  vnoremap <buffer> $ g$
-  vnoremap <buffer> 0 g0
 endfunction
 
 autocmd FileType markdown call SetupForText()
