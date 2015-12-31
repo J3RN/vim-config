@@ -14,7 +14,7 @@ autocmd FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
 autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
 """ Line numbers are pretty great
-set nu
+set number
 
 """ TMUX fix
 if $TMUX == ''
