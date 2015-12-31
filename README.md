@@ -6,7 +6,17 @@ Just my personal vim config. I use it.
 
 ## Requirements
 
-A [powerline font](https://github.com/powerline/fonts). I use Ubuntu Mono.
+A [powerline font](https://github.com/powerline/fonts). I use Ubuntu Mono. Everything else (like ZSH) should be optional. Open an issue if it is not.
+
+## Install
+
+Simply run:
+
+```
+./install.sh
+```
+
+It doesn't do anything evil, I promise. If you'd like to verify that, I encourage you to read it - it's a mere 30 SLOC.
 
 ## Plugins
 My descriptions below are very basic. Please read the projects' pages if you
