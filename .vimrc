@@ -63,7 +63,9 @@ filetype plugin indent on
 set t_Co=256
 
 """ Zsh for general compatibility
-set shell=/bin/zsh
+if executable('/bin/zsh')
+  set shell=/bin/zsh
+endif
 
 """ Folding
 set fdm=indent                        " Fold on indent, naturally
