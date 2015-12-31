@@ -269,13 +269,7 @@ let g:tmuxline_preset = {
         \'z'       : '%Y-%m-%d %H:%M',
         \'options' : {'status-justify' : 'left'}}
 
-" Have Syntastic understand AngularJS and Meteor
-let g:syntastic_html_tidy_ignore_errors=[
-      \ " proprietary attribute \"ng-",
-      \ "<template> is not recognized!",
-      \ "discarding unexpected <template>",
-      \ "discarding unexpected </template>"]
-
+" Be passive on HTML and let me write my Angular, Meteor, etc
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
 " Technically this is global, but here set for vim-gitgutter
