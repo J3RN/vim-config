@@ -21,11 +21,13 @@ if $TMUX == ''
   set clipboard+=unnamed
 endif
 
-""" Keep cursor centered in screen
+""" Keep cursor somewhat centered in screen
 set scrolloff=5
 
 """ Listchars, should you want them
 set listchars=eol:$,tab:»»,space:·
+
+""" Highlight colors for listchars and other unknows/invisibles
 hi NonText ctermfg=8
 hi SpecialKey ctermfg=8
 
@@ -115,9 +117,10 @@ function! SetupForText()
 endfunction
 
 autocmd FileType markdown call SetupForText()
+
 """ Trailing whitespace
 
-" Highlighting
+" Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace guibg=red
 autocmd BufEnter * match ExtraWhitespace /\s\+$/
@@ -173,9 +176,10 @@ nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gm :Git checkout -b 
 nnoremap <Leader>gc :Git checkout 
+" My custom git commands
 nnoremap <silent> <Leader>gu :call PushAndSetUpstream()<CR>
 nnoremap <silent> <Leader>gf :call ForcePush()<CR>
-""" Better :
+" Better :
 nnoremap : q:i
 " Terminal
 if has("nvim")
