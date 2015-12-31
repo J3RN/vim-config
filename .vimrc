@@ -81,7 +81,7 @@ endfunction
 
 autocmd BufEnter * if &diff | call SetDiffColors() | endif
 
-""" Function to push the current git branch and set an upstream
+""" More Git functions not provided by vim-fugitive
 function! PushAndSetUpstream()
   let current_branch = system("git symbolic-ref --short HEAD")
   echo system("git push -u origin ".current_branch)
