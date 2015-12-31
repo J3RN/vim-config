@@ -263,8 +263,8 @@ let g:rails_projections = {
 let g:tmuxline_preset = {
         \'a'       : '#S',
         \'b'       : ['#I:#P','#F'],
-        \'win'       : ['#I', '#W'],
-        \'cwin'       : ['#I', '#W'],
+        \'win'     : ['#I', '#W'],
+        \'cwin'    : ['#I', '#W'],
         \'y'       : "#(~/.vim/.tmux_battery_indicator.sh)",
         \'z'       : '%Y-%m-%d %H:%M',
         \'options' : {'status-justify' : 'left'}}
