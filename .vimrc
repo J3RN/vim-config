@@ -8,9 +8,9 @@ let mapleader=","
 " Default
 set tabstop=2 shiftwidth=2 expandtab
 " Specifics
-au FileType c,arduino setlocal tabstop=8 shiftwidth=8 noexpandtab
-au FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
-au FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
+autocmd FileType c,arduino setlocal tabstop=8 shiftwidth=8 noexpandtab
+autocmd FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
+autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
 """ Line numbers are pretty great
 set nu
@@ -78,7 +78,7 @@ function! SetDiffColors()
   hi DiffText                  ctermfg=16 ctermbg=3 cterm=bold
 endfunction
 
-au BufEnter * if &diff | call SetDiffColors() | endif
+autocmd BufEnter * if &diff | call SetDiffColors() | endif
 
 """ Function to push the current git branch and set an upstream
 function! PushAndSetUpstream()
@@ -113,16 +113,15 @@ function! SetupForText()
   vnoremap <buffer> 0 g0
 endfunction
 
-au FileType markdown call SetupForText()
-
+autocmd FileType markdown call SetupForText()
 """ Trailing whitespace
 
 " Highlighting
 highlight ExtraWhitespace ctermbg=red guibg=red
-au ColorScheme * highlight ExtraWhitespace guibg=red
-au BufEnter * match ExtraWhitespace /\s\+$/
-au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-au InsertLeave * match ExtraWhiteSpace /\s\+$/
+autocmd ColorScheme * highlight ExtraWhitespace guibg=red
+autocmd BufEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 """ Completion
 
@@ -134,7 +133,7 @@ set guifont=Ubuntu\ Mono\ Powerline:h12
 
 """ Auto-insert when entering a terminal
 if has("nvim")
-  au BufEnter * if bufname("%") =~ "term://" | startinsert | endif
+  autocmd BufEnter * if bufname("%") =~ "term://" | startinsert | endif
 endif
 
 """ Mouse mode, if available
@@ -218,7 +217,7 @@ if has("nvim")
 endif
 
 "" HTML template
-au BufNewFile *.html 0r ~/.vim/common_config/template.html
+autocmd BufNewFile *.html 0r ~/.vim/common_config/template.html
 
 """ Plugin configs
 
