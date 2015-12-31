@@ -68,10 +68,8 @@ if executable('/bin/zsh')
 endif
 
 """ Folding
-set fdm=indent                        " Fold on indent, naturally
-au FileType gitcommit set fdm=manual  " Why would you fold gitcommits?
-" All folds open by default
-au BufRead * normal zR
+set foldmethod=indent                 " Fold on indent, naturally
+set foldlevelstart=20                 " Start basicall all unfolded
 
 """ Better color scheme for diffing
 function! SetDiffColors()
