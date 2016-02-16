@@ -10,7 +10,7 @@ set tabstop=2 shiftwidth=2 expandtab
 set shiftround      " Don't think anyone would disagree here
 " Specifics
 autocmd FileType c,arduino setlocal tabstop=8 shiftwidth=8 noexpandtab
-autocmd FileType javascript,json,rust setlocal shiftwidth=4 tabstop=4
+autocmd FileType json,rust setlocal shiftwidth=4 tabstop=4
 autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
 """ Line numbers are pretty great
@@ -40,13 +40,11 @@ set smartcase   " Used with above to only ignore sometimes
 set incsearch   " C-r C-w to complete search term
 set hlsearch    " Highlight search
 
-""" Show where the 80 character limit is (except for JavaScript)
+""" Show where the 80 character limit is
+"" Enforce it with 'textwidth'
 if exists('+colorcolumn')
-  if &ft ==? "javascript"
-    set colorcolumn=120
-  else
-    set colorcolumn=80
-  endif
+  setlocal colorcolumn=80
+  setlocal textwidth=80
 endif
 
 """ Unix line endings
