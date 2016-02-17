@@ -98,3 +98,7 @@ These are some mappings that are included and I find rather convenient
 |---------|-------------|
 | jk | Exit insert mode in terminal |
 | `CTRL`w | Exit insert mode and trigger `CTRL`w |
+
+## LICENSE
+
+This is MIT Licensed. You can find the whole license in the `LICENSE` file.
