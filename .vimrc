@@ -199,6 +199,8 @@ if has("nvim")
 else
   nnoremap <Leader>t <ESC>:!fish<CR>
 endif
+" Faster make
+nnoremap <Leader>m :make<CR>
 
 "" Insert Mode
 " I was told all the cool kids did it
