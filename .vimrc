@@ -90,10 +90,13 @@ endfunction
 
 """ Settings specific to non-code editing
 function! SetupForText()
-  "" Various
+  " Spell checking
   setlocal spell spelllang=en_us
+  " Wrap at end of screen
   setlocal wrap
+  " Break on whitespace
   setlocal linebreak
+  " Turn off colorcolumn
   setlocal colorcolumn=0
 
   "" Moving around in texy files
