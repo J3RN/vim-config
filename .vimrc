@@ -105,7 +105,8 @@ function! SetupForText()
   vnoremap <buffer> k gk
 endfunction
 
-autocmd FileType markdown call SetupForText()
+" Use text mode for Markdown and LaTeX
+autocmd FileType markdown,tex call SetupForText()
 
 """ Trailing whitespace
 
@@ -153,8 +154,12 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
-"" HTML template
+"" Templates
 autocmd BufNewFile *.html 0r ~/.vim/common_config/template.html
+autocmd BufNewFile *.tex 0r ~/.vim/common_config/template.tex
+
+"" RTex support
+autocmd BufRead,BufNewFile *.Rtex setfiletype tex
 
 """ Mappings
 
