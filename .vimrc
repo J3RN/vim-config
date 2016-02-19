@@ -1,5 +1,5 @@
 """ Load Vundle plugins
-runtime! common_config/*.vim
+runtime! vundle.vim
 
 """ Set leader to ,
 let mapleader=","
@@ -158,8 +158,8 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
 "" Templates
-autocmd BufNewFile *.html 0r ~/.vim/common_config/template.html
-autocmd BufNewFile *.tex 0r ~/.vim/common_config/template.tex
+autocmd BufNewFile *.html 0r ~/.vim/templates/template.html
+autocmd BufNewFile *.tex 0r ~/.vim/templates/template.tex
 
 "" RTex support
 autocmd BufRead,BufNewFile *.Rtex setfiletype tex
