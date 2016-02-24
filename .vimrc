@@ -268,6 +268,7 @@ let g:rails_projections = {
       \ "app/workers/*.rb":     {"command": "worker"},
       \ "app/jobs/*.rb":        {"command": "job"},
       \ "spec/factories/*.rb":  {"command": "factory"},
+      \ "config/deploy/*.rb":   {"command": "deploy"},
       \ "config/*":             {"command": "cnf" }}
 
 " Custom Tmuxline preset
