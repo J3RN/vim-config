@@ -138,8 +138,7 @@ if has("mouse")
   set mouse=a
 endif
 
-""" Open new split panes to right and bottom, which feels more natural
-set splitbelow
+""" Open new split panes to right, which feels more natural
 set splitright
 
 " Tab completion
