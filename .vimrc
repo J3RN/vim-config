@@ -203,6 +203,10 @@ else
 endif
 " Faster make
 nnoremap <Leader>m :make<CR>
+" Switch around the comma
+nnoremap <Leader>w dt,<right><right>P<right>dEF,P
+" Bundle
+nnoremap <Leader>b :Bundle<CR>
 
 "" Insert Mode
 " I was told all the cool kids did it

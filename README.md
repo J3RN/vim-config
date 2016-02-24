@@ -77,6 +77,8 @@ These are some mappings that are included and I find rather convenient
 | ,f | Execute `git push -f origin <current-branch>` |
 | : | Open the multi-line console, as usually opened by `q:` |
 | ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
+| ,b | Run `:Bundle` |
+| ,w | Switch the words around a comma. For example, "foo, bar" becomes "bar, foo". |
 
 ### Insert Mode
 
