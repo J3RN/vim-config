@@ -112,7 +112,7 @@ function! SetupForText()
 endfunction
 
 " Use text mode for Markdown and LaTeX
-autocmd FileType markdown,tex call SetupForText()
+autocmd FileType markdown call SetupForText()
 
 """ Trailing whitespace
 
