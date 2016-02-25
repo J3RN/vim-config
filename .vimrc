@@ -98,8 +98,11 @@ function! SetupForText()
   setlocal linebreak
   " Turn off colorcolumn
   setlocal colorcolumn=0
+  " Unset textwidth
+  setlocal textwidth=0
 
-  "" Moving around in texy files
+
+  "" Moving around in wrapped lines
   " Normal mode
   nnoremap <buffer> j gj
   nnoremap <buffer> k gk
