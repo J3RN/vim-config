@@ -208,7 +208,7 @@ endif
 " Faster make
 nnoremap <Leader>m :make<CR>
 " Switch around the comma
-nnoremap <Leader>w dt,<right><right>P<right>dEF,P
+nnoremap <Leader>w T(dt,<right>p<right>dt)F,P
 " Bundle
 nnoremap <Leader>b :Bundle<CR>
 
