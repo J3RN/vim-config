@@ -21,25 +21,25 @@ Plugin 'tpope/vim-fugitive'                     " Git tools in Vim
 Plugin 'airblade/vim-gitgutter'                 " Git gutter. It's cool!
 
 " Laguage-Specific improvments (syntax highlighting, etc)
-Plugin 'kchmck/vim-coffee-script'               " Coffeescript
-Plugin 'slim-template/vim-slim'                 " Slim
-Plugin 'tpope/vim-markdown'                     " Markdown
+Plugin 'kchmck/vim-coffee-script'               " Coffeescript support
+Plugin 'slim-template/vim-slim'                 " Slim support
+Plugin 'tpope/vim-markdown'                     " Markdown support
 Plugin 'Slava/vim-spacebars'                    " Spacebars support
-Plugin 'othree/html5.vim'                       " Better HTML5 highlighting
-Plugin 'keith/rspec.vim'                        " RSpec syntax highlighting
-Plugin 'rust-lang/rust.vim'                     " Rust!
-Plugin 'dag/vim-fish'                           " For fish syntax highlighting
+Plugin 'othree/html5.vim'                       " Better HTML5 support
+Plugin 'keith/rspec.vim'                        " RSpec support
+Plugin 'rust-lang/rust.vim'                     " Rust support
+Plugin 'dag/vim-fish'                           " Fish support
 Plugin 'elixir-lang/vim-elixir'                 " Elixir support
-Plugin 'digitaltoad/vim-jade'                   " Jade syntax highlighting
+Plugin 'digitaltoad/vim-jade'                   " Jade support
 
 " Other excellent things
 Plugin 'scrooloose/nerdtree'                    " Nerdtree
 Plugin 'scrooloose/syntastic'                   " Syntastic
 Plugin 'tpope/vim-bundler'                      " Bundler
 Plugin 'tpope/vim-endwise'                      " Endwise
-Plugin 'tpope/vim-rails'                        " Rails!
+Plugin 'tpope/vim-rails'                        " Rails
 Plugin 'tpope/vim-commentary'                   " Easy commenting
-Plugin 'kien/ctrlp.vim'                         " CTRL-p
+Plugin 'kien/ctrlp.vim'                         " Quick file finding
 Plugin 'rking/ag.vim'                           " Silver searcher in Vim
 Plugin 'rizzatti/dash.vim'                      " Launch Dash from Vim
 
