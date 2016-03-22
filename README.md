@@ -64,21 +64,21 @@ These are some mappings that are included and I find rather convenient
 
 | Mapping | Description|
 |---------|------------|
-| ,s | Clear search highlighting (`:noh`) |
-| ,d | Deletes all trailing whitespace (highlighted in red) |
-| ,c | Correct contents of an HTML tag |
-| ,g | Use Fugitive to open the `git` status |
-| ,p | Use Fugitive to `git push` |
-| ,o | Use Fugitive to `git pull` |
-| ,b | Use Fugitive to `git blame` |
-| ,d | Use Fugitive to `git diff` |
-| ,m | Use Fugitive to `git checkout -b` |
-| ,u | Execute `git push -u origin <current-branch>` |
-| ,f | Execute `git push -f origin <current-branch>` |
-| : | Open the multi-line console, as usually opened by `q:` |
-| ,t | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
-| ,b | Run `:Bundle` |
-| ,w | Switch the words around a comma. For example, "foo, bar" becomes "bar, foo". |
+| ,b  | Run `:Bundle` |
+| ,c  | Correct contents of an HTML tag |
+| ,d  | Deletes all trailing whitespace (highlighted in red) |
+| ,gs | Use Fugitive to open the `git` status |
+| ,gm | Use Fugitive to `git checkout -b` |
+| ,go | Use Fugitive to `git pull` |
+| ,gp | Use Fugitive to `git push` |
+| ,gb | Use Fugitive to `git blame` |
+| ,gd | Use Fugitive to `git diff` |
+| ,gu | Execute `git push -u origin <current-branch>` |
+| ,gf | Execute `git push -f origin <current-branch>` |
+| ,s  | Clear search highlighting (`:noh`) |
+| ,t  | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
+| ,w  | Swap parameters. For example, "foo(foo, bar)" becomes "foo(bar, foo)". |
+| :   | Open the multi-line console, as usually opened by `q:` |
 
 ### Insert Mode
 
