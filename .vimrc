@@ -211,6 +211,8 @@ nnoremap <Leader>m :make<CR>
 nnoremap <Leader>w T(dt,<right>p<right>dt)F,P
 " Bundle
 nnoremap <Leader>b :Bundle<CR>
+" Next
+nnoremap <Leader>n :w<CR>:n<CR>
 
 "" Insert Mode
 " I was told all the cool kids did it
