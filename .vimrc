@@ -285,7 +285,10 @@ let g:tmuxline_preset = {
         \'options' : {'status-justify' : 'left'}}
 
 " Be passive on HTML and let me write my Angular, Meteor, etc
-let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+let g:syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+" Assume Python 3
+let g:syntastic_python_python_exec = '/usr/bin/env python3'
 
 " Technically this is global, but here set for vim-gitgutter
 set updatetime=750
