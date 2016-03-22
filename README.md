@@ -67,6 +67,11 @@ These are some mappings that are included and I find rather convenient
 | ,b  | Run `:Bundle` |
 | ,c  | Correct contents of an HTML tag |
 | ,d  | Deletes all trailing whitespace (highlighted in red) |
+| ,ft | TestNearest |
+| ,fT | TestFile |
+| ,fa | TestSuite |
+| ,fl | TestLast |
+| ,fg | TestVisit |
 | ,gs | Use Fugitive to open the `git` status |
 | ,gm | Use Fugitive to `git checkout -b` |
 | ,go | Use Fugitive to `git pull` |
@@ -79,6 +84,12 @@ These are some mappings that are included and I find rather convenient
 | ,t  | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
 | ,w  | Swap parameters. For example, "foo(foo, bar)" becomes "foo(bar, foo)". |
 | :   | Open the multi-line console, as usually opened by `q:` |
+
+For all of the Test* commands, you can find what these esoteric words mean on the [Vim-test README](https://github.com/janko-m/vim-test#setup).
+
+**Why did you choose `f` for the prefix for the test commands?**
+
+It's on the home row, and `t` was already mapped
 
 ### Insert Mode
 
