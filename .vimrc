@@ -191,6 +191,7 @@ nnoremap <Leader>gp :Gpush<CR>
 nnoremap <Leader>go :Gpull<CR>
 nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gr :Gbrowse<CR>
 nnoremap <Leader>gm :Git checkout -b 
 nnoremap <Leader>gc :Git checkout 
 " My custom git commands
