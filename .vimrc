@@ -120,7 +120,7 @@ autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
 set omnifunc=syntaxcomplete#Complete
 
 """ Set GUI font for MacVim
-set guifont=Ubuntu\ Mono\ Powerline:h12
+set guifont=Inconsolata-g\ for\ Powerline:h14
 
 """ Auto-insert when entering a terminal
 if has("nvim")
