@@ -18,19 +18,19 @@ set relativenumber
 """ Keep cursor somewhat centered in screen
 set scrolloff=5
 
-""" Listchars, should you want them
+""" Better invisibles, should you want them
 set listchars=eol:$,tab:»»,space:·
 
-""" Highlight colors for listchars and other unknows/invisibles
+""" Highlight colors for listchars and other unknowns/invisibles
 hi NonText ctermfg=8
 hi SpecialKey ctermfg=8
 
 """ Who needs vi compatibility anyways?
 set nocompatible
 
-""" Custom search stuff
+""" Better searching
 set ignorecase  " Ignore case of searches
-set smartcase   " Used with above to only ignore sometimes
+set smartcase   " Used with above to only ignore case when you type lowercase
 set incsearch   " C-r C-w to complete search term
 set hlsearch    " Highlight search
 
@@ -56,14 +56,14 @@ filetype plugin indent on
 """ Set vim to use 256 colors (Tmux/Vim Airline fix)
 set t_Co=256
 
-""" Zsh for general compatibility
+""" Zsh for better compatibility (I use fish shell)
 if executable('/bin/zsh')
   set shell=/bin/zsh
 endif
 
 """ Folding
 set foldmethod=indent                 " Fold on indent, naturally
-set foldlevelstart=20                 " Start basicall all unfolded
+set foldlevelstart=20                 " Start basically all unfolded
 
 """ Better color scheme for diffing
 hi DiffAdd      ctermfg=254 ctermbg=22
@@ -86,13 +86,13 @@ endfunction
 function! SetupForText()
   " Spell checking
   setlocal spell spelllang=en_us
-  " Wrap at end of screen
-  setlocal wrap
-  " Break on whitespace
-  setlocal linebreak
   " Turn off colorcolumn
   setlocal colorcolumn=0
-  " Unset textwidth
+  " Wrap at end of screen
+  setlocal wrap
+  " Wrap on whitespace
+  setlocal linebreak
+  " Do not break lines
   setlocal textwidth=0
 
 
