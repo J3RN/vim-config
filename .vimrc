@@ -37,9 +37,9 @@ set hlsearch    " Highlight search
 """ Show where the 80 character limit is
 "" Enforce it with 'textwidth'
 if exists('+colorcolumn')
-  setlocal colorcolumn=80
-  setlocal textwidth=80
+  set colorcolumn=80
 endif
+set textwidth=80
 
 """ Unix line endings
 set fileformat=unix
