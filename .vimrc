@@ -13,11 +13,6 @@ set shiftround      " Don't think anyone would disagree here
 
 """ Relative line numbers are pretty great
 set number
-
-""" TMUX fix
-if $TMUX == ''
-  set clipboard+=unnamed
-endif
 set relativenumber
 
 """ Keep cursor somewhat centered in screen
