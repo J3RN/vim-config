@@ -144,21 +144,6 @@ endif
 """ Open new split panes to right, which feels more natural
 set splitright
 
-" Tab completion
-" will insert tab at beginning of line,
-" will use completion if not at beginning
-set wildmode=list:longest,list:full
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] =~ '\s'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <S-Tab> <c-n>
-
 "" Templates
 autocmd BufNewFile *.html 0r ~/.vim/templates/template.html
 autocmd BufNewFile *.tex 0r ~/.vim/templates/template.tex
@@ -300,3 +285,6 @@ let g:syntastic_python_python_exec = '/usr/bin/env python3'
 
 " Technically this is global, but here set for vim-gitgutter
 set updatetime=750
+
+" Set better super tab completion
+let g:SuperTabDefaultCompletionType = "context"
