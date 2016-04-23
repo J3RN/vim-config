@@ -141,6 +141,8 @@ autocmd BufNewFile *.tex 0r ~/.vim/templates/template.tex
 
 "" RTex support
 autocmd BufRead,BufNewFile *.Rtex setfiletype tex
+""" Jump to last place in file on open
+autocmd BufEnter * '"
 
 """ Mappings
 
