@@ -43,6 +43,7 @@ Plugin 'kien/ctrlp.vim'           " Quick file finding
 Plugin 'rking/ag.vim'             " Silver searcher in Vim
 Plugin 'rizzatti/dash.vim'        " Launch Dash from Vim
 Plugin 'janko-m/vim-test'         " Support for various testing frameworks
+Plugin 'ervandew/supertab'        " Better tab-completion
 
 " End Vundle
 call vundle#end()
