@@ -5,13 +5,11 @@ runtime! vundle.vim
 let mapleader=","
 
 """ FileType tabbing settings
-" Default
+" Default tabbing
+" Some languages have custom tabbing, specified in their ftplugin/<name>.vim
+" files
 set tabstop=2 shiftwidth=2 expandtab
 set shiftround      " Don't think anyone would disagree here
-" Specifics
-autocmd FileType c,arduino setlocal tabstop=8 shiftwidth=8 noexpandtab
-autocmd FileType json,rust setlocal shiftwidth=4 tabstop=4
-autocmd FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4
 
 """ Line numbers are pretty great
 set number
