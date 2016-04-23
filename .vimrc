@@ -105,9 +105,6 @@ function! SetupForText()
   vnoremap <buffer> k gk
 endfunction
 
-" Use text mode for Markdown and LaTeX
-autocmd FileType markdown call SetupForText()
-
 """ Trailing whitespace
 
 " Highlight trailing whitespace
