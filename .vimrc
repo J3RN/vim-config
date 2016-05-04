@@ -19,7 +19,7 @@ set relativenumber
 set scrolloff=5
 
 """ Better invisibles, should you want them
-set listchars=eol:$,tab:»»,space:·
+set listchars=eol:$,tab:»»
 
 """ Highlight colors for listchars and other unknowns/invisibles
 hi NonText ctermfg=8
@@ -140,7 +140,7 @@ autocmd BufNewFile *.html 0r ~/.vim/templates/template.html
 autocmd BufNewFile *.tex 0r ~/.vim/templates/template.tex
 
 """ Jump to last place in file on open
-autocmd BufEnter * '"
+autocmd BufRead * '"
 
 """ Mappings
 
