@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 function move_if_exists() {
   if [ -e $HOME/$1 ]; then
@@ -7,30 +7,26 @@ function move_if_exists() {
   fi
 }
 
-echo "Linking .vim directory..."
-move_if_exists ".vim"
-ln -si "$(pwd)/.vim" "$HOME"
+pwd=$(pwd)
 
-echo "Linking .vimrc..."
-move_if_exists ".vimrc"
-ln -si "$(pwd)/.vimrc" "$HOME"
+if type vim &> /dev/null; then
+  echo "Linking for Vim"
 
-# Install Vundle
-if [ ! -e "$HOME/.vim/bundle/Vundle.vim" ]; then
-  echo "Installing Vundle"
-  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  move_if_exists ".vim"
+  ln -si "$pwd/.vim" "$HOME"
+
+  move_if_exists ".vimrc"
+  ln -si "$pwd/.vimrc" "$HOME"
+
+  echo "Installing plugins..."
+  vim +PluginInstall +qall
 fi
-
-echo "Installing plugins..."
-vim +PluginInstall +qall
 
 if hash nvim > /dev/null; then
   echo "Linking for NeoVim"
-  move_if_exists ".nvimrc"
-  ln -si $HOME/.vimrc $HOME/.nvimrc
 
-  move_if_exists ".nvim"
-  ln -si $HOME/.vim/ $HOME/.nvim
+  move_if_exists ".config/nvim"
+  ln -si $pwd/.vim $HOME/.config/nvim
 
   echo "Installing NeoVim plugins..."
   nvim +PluginInstall +qall
