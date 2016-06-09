@@ -65,6 +65,10 @@ endif
 set foldmethod=indent                 " Fold on indent, naturally
 set foldlevelstart=20                 " Start basically all unfolded
 
+""" Awesome colors
+colo pencil
+set background=dark
+
 """ Better color scheme for diffing
 hi DiffAdd      ctermfg=254 ctermbg=22
 hi DiffDelete   ctermfg=16 ctermbg=52 cterm=bold
