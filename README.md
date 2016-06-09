@@ -80,10 +80,10 @@ These are some mappings that are included and I find rather convenient
 | ,gd | Use Fugitive to `git diff` |
 | ,gu | Execute `git push -u origin <current-branch>` |
 | ,gf | Execute `git push -f origin <current-branch>` |
+| ,rc | User vim-rails to run `rails console` |
 | ,s  | Clear search highlighting (`:noh`) |
 | ,t  | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
 | ,w  | Swap parameters. For example, "foo(foo, bar)" becomes "foo(bar, foo)". |
-| :   | Open the multi-line console, as usually opened by `q:` |
 
 For all of the Test* commands, you can find what these esoteric words mean on the [Vim-test README](https://github.com/janko-m/vim-test#setup).
 

@@ -179,6 +179,8 @@ nnoremap <silent> <Leader>gu :call PushAndSetUpstream()<CR>
 nnoremap <silent> <Leader>gf :call ForcePush()<CR>
 " Better :
 nnoremap : q:i
+" Rails commands
+nnoremap <Leader>rc :Rails console<CR>
 " Terminal
 if has("nvim")
   nnoremap <Leader>t <ESC>:term fish<CR>
