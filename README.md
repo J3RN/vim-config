@@ -48,6 +48,9 @@ would like to know more about them
 | [Spacebars](https://github.com/Slava/vim-spacebars) | Spacebars support |
 | [HTML5](https://github.com/othree/html5.vim) | Better HTML5 syntax highlighting |
 | [RSpec](https://github.com/keith/rspec.vim) | Better RSpec syntax highlighting |
+| [Nim](https://github.com/zah/nim.vim) | Better Nim support |
+| [Dispatch](https://github.com/tpope/vim-dispatch) | Run async compiler plugins |
+| [Pencil](https://github.com/reedes/vim-colors-pencil) | Nice colors |
 
 ## Custom mappings
 These are some mappings that are included and I find rather convenient
