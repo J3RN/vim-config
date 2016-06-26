@@ -68,9 +68,9 @@ These are some mappings that are included and I find rather convenient
 | Mapping | Description|
 |---------|------------|
 | ,a  | Copy entire contents of current buffer into system clipboard |
-| ,b  | Run `:Bundle` |
+| ,b  | Run `bundle` using vim-bundler  |
 | ,c  | Correct contents of an HTML tag |
-| ,d  | Deletes all trailing whitespace (highlighted in red) |
+| ,d  | Deletes all trailing whitespace in the current buffer (highlighted in red) |
 | ,ft | TestNearest |
 | ,fT | TestFile |
 | ,fa | TestSuite |
@@ -82,14 +82,14 @@ These are some mappings that are included and I find rather convenient
 | ,gp | Use Fugitive to `git push` |
 | ,gb | Use Fugitive to `git blame` |
 | ,gd | Use Fugitive to `git diff` |
-| ,gu | Execute `git push -u origin <current-branch>` |
-| ,gf | Execute `git push -f origin <current-branch>` |
-| ,rc | User vim-rails to run `rails console` |
+| ,gu | Push and set upstream (`git push -u origin <current-branch>`) |
+| ,gf | Force push current branch (`git push -f origin <current-branch>`) |
+| ,rc | Use vim-rails to run `rails console` |
 | ,s  | Clear search highlighting (`:noh`) |
 | ,t  | Open a terminal (works best in [Neovim](https://github.com/neovim/neovim)) |
 | ,w  | Swap parameters. For example, "foo(foo, bar)" becomes "foo(bar, foo)". |
 
-For all of the Test* commands, you can find what these esoteric words mean on the [Vim-test README](https://github.com/janko-m/vim-test#setup).
+For all of the Test* commands, you can find what these nonsense words mean on the [Vim-test README](https://github.com/janko-m/vim-test#setup).
 
 **Why did you choose `f` for the prefix for the test commands?**
 
