@@ -16,7 +16,7 @@ set number
 set relativenumber
 
 """ Keep cursor somewhat centered in screen
-set scrolloff=10
+set scrolloff=5
 
 """ Better invisibles, should you want them
 set listchars=eol:$,tab:»»,space:·
