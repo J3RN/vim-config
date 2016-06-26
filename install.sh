@@ -9,7 +9,11 @@ function move_if_exists() {
 
 pwd=$(pwd)
 
+# Install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 if type vim &> /dev/null; then
+  # Link Vim items
   echo "Linking for Vim"
 
   move_if_exists ".vim"
@@ -23,6 +27,7 @@ if type vim &> /dev/null; then
 fi
 
 if hash nvim > /dev/null; then
+  # Link NeoVim items
   echo "Linking for NeoVim"
 
   move_if_exists ".config/nvim"
