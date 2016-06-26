@@ -201,6 +201,7 @@ nnoremap <silent> <leader>fT :TestFile<CR>
 nnoremap <silent> <leader>fa :TestSuite<CR>
 nnoremap <silent> <leader>fl :TestLast<CR>
 nnoremap <silent> <leader>fg :TestVisit<CR>
+nnoremap <Leader>a gg"+yG<c-o><c-o>
 
 "" Insert Mode
 " I was told all the cool kids did it

@@ -67,6 +67,7 @@ These are some mappings that are included and I find rather convenient
 
 | Mapping | Description|
 |---------|------------|
+| ,a  | Copy entire contents of current buffer into system clipboard |
 | ,b  | Run `:Bundle` |
 | ,c  | Correct contents of an HTML tag |
 | ,d  | Deletes all trailing whitespace (highlighted in red) |
