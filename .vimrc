@@ -196,11 +196,11 @@ nnoremap <Leader>b :Bundle<CR>
 " Next
 nnoremap <Leader>n :w<CR>:n<CR>
 " Vim-test mappings
-nmap <silent> <leader>ft :TestNearest<CR>
-nmap <silent> <leader>fT :TestFile<CR>
-nmap <silent> <leader>fa :TestSuite<CR>
-nmap <silent> <leader>fl :TestLast<CR>
-nmap <silent> <leader>fg :TestVisit<CR>
+nnoremap <silent> <leader>ft :TestNearest<CR>
+nnoremap <silent> <leader>fT :TestFile<CR>
+nnoremap <silent> <leader>fa :TestSuite<CR>
+nnoremap <silent> <leader>fl :TestLast<CR>
+nnoremap <silent> <leader>fg :TestVisit<CR>
 
 "" Insert Mode
 " I was told all the cool kids did it
