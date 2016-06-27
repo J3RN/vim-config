@@ -136,8 +136,9 @@ if has("mouse")
   set mouse=a
 endif
 
-""" Open new split panes to right, which feels more natural
+""" Open new split panes to right and below, which feels more natural
 set splitright
+set splitbelow
 
 "" Templates
 autocmd BufNewFile *.html 0r ~/.vim/templates/template.html
