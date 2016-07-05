@@ -8,7 +8,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " Aesthetics
 Plugin 'bling/vim-airline'                " Vim Airline
-Plugin 'edkolev/tmuxline.vim'             " Tmuxline
 
 " Parenthesis
 Plugin 'luochen1990/rainbow'              " New rainbow parenthesis

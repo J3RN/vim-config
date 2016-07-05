@@ -266,16 +266,6 @@ let g:rails_projections = {
       \ "config/deploy/*.rb":   {"command": "deploy"},
       \ "config/*":             {"command": "cnf" }}
 
-" Custom Tmuxline preset
-let g:tmuxline_preset = {
-        \'a'       : '#S',
-        \'b'       : ['#I:#P','#F'],
-        \'win'     : ['#I', '#W'],
-        \'cwin'    : ['#I', '#W'],
-        \'y'       : "#(~/.vim/.tmux_battery_indicator.sh)",
-        \'z'       : '%Y-%m-%d %H:%M',
-        \'options' : {'status-justify' : 'left'}}
-
 " Be passive on HTML and let me write my Angular, Meteor, etc
 let g:syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
