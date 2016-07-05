@@ -277,3 +277,6 @@ set updatetime=750
 
 " Set better super tab completion
 let g:SuperTabDefaultCompletionType = "context"
+
+" Set Vim-Test to use Dispatch (important!)
+let test#strategy = "dispatch"
