@@ -150,16 +150,16 @@ autocmd BufRead * '"
 """ Mappings
 
 "" All modes
-" NERDTree
-noremap <C-n> :NERDTreeToggle<CR>
 " Save with CTRL-s
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>
 vnoremap <C-s> <ESC>:w<CR>
-" Quit with CTRL-c
-noremap <C-c> :q<CR>
 
 "" Normal mode
+" Quit with CTRL-c
+nnoremap <C-c> <ESC>:q<CR>
+" NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>
 " Clear Serach
 nnoremap <Leader>s :noh<CR>
 " Delete extra whitespace
