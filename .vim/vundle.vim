@@ -28,7 +28,7 @@ Plugin 'tpope/vim-endwise'                " Endwise
 Plugin 'tpope/vim-rails'                  " Rails
 Plugin 'tpope/vim-commentary'             " Easy commenting
 Plugin 'kien/ctrlp.vim'                   " Quick file finding
-Plugin 'rking/ag.vim'                     " Silver searcher in Vim
+Plugin 'mileszs/ack.vim'                  " Silver searcher in Vim
 Plugin 'rizzatti/dash.vim'                " Launch Dash from Vim
 Plugin 'janko-m/vim-test'                 " Support for various testing frameworks
 Plugin 'ervandew/supertab'                " Better tab-completion
