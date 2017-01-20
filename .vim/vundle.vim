@@ -4,7 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Vundle your vundle
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " Aesthetics
 Plugin 'bling/vim-airline'                " Vim Airline
