@@ -26,7 +26,7 @@ if type vim &> /dev/null; then
   vim +PluginInstall +qall
 fi
 
-if hash nvim > /dev/null; then
+if hash nvim &> /dev/null; then
   # Link NeoVim items
   echo "Linking for NeoVim"
 
