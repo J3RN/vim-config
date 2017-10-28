@@ -178,8 +178,6 @@ nnoremap <Leader>gc :Git checkout
 " My custom git commands
 nnoremap <silent> <Leader>gu :call PushAndSetUpstream()<CR>
 nnoremap <silent> <Leader>gf :call ForcePush()<CR>
-" Better :
-nnoremap : q:i
 " Rails commands
 nnoremap <Leader>rc :Rails console<CR>
 " Terminal
