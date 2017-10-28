@@ -9,7 +9,7 @@ let mapleader=","
 " Some languages have custom tabbing, specified in their ftplugin/<name>.vim
 " files
 set tabstop=2 shiftwidth=2 expandtab
-set shiftround      " Don't think anyone would disagree here
+set shiftround      " Round to the nearest tab increment when indenting
 
 """ Relative line numbers are pretty great
 set number
@@ -35,10 +35,11 @@ set incsearch   " C-r C-w to complete search term
 set hlsearch    " Highlight search
 
 """ Show where the 80 character limit is
-"" Enforce it with 'textwidth'
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
+
+""" Enforce it with 'textwidth'
 set textwidth=80
 
 """ Unix line endings
@@ -62,8 +63,8 @@ if executable('/bin/zsh')
 endif
 
 """ Folding
-set foldmethod=indent                 " Fold on indent, naturally
-set foldlevelstart=20                 " Start basically all unfolded
+set foldmethod=syntax                 " Fold on indent, naturally
+set foldlevelstart=999                " Start basically all unfolded
 
 """ Awesome colors
 colo pencil
@@ -140,7 +141,7 @@ endif
 set splitright
 set splitbelow
 
-"" Templates
+""" Templates
 autocmd BufNewFile *.html 0r ~/.vim/templates/template.html
 autocmd BufNewFile *.tex 0r ~/.vim/templates/template.tex
 
@@ -200,12 +201,13 @@ nnoremap <silent> <leader>fT :TestFile<CR>
 nnoremap <silent> <leader>fa :TestSuite<CR>
 nnoremap <silent> <leader>fl :TestLast<CR>
 nnoremap <silent> <leader>fg :TestVisit<CR>
+" Copy entire file into system clipboard
 nnoremap <Leader>a gg"+yG<c-o><c-o>
 
 "" Insert Mode
 " I was told all the cool kids did it
 inoremap jk <Esc>
-" Create HTML tags
+" Create HTML tag out of text under cursor
 inoremap <Leader>h <ESC>"adiwa<<C-r>a></<C-r>a><ESC>%i
 
 "" Visual Mode
